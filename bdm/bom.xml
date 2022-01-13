@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.13.0">
+    <businessObjects>
+        <businessObject qualifiedName="com.itfirma.model.NivoObrazovanja">
+            <fields>
+                <field type="STRING" length="255" name="nivoObrazovanja" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.itfirma.model.OglasZaPosao">
+            <fields>
+                <field type="STRING" length="255" name="naslov" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="lokacija" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="datumOtvaranja" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="datumZatvaranja" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="opis" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="potrebneVestineIZnanja" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="pozicija" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.itfirma.model.StraniJezik" fetchType="LAZY" name="straniJezici" nullable="true" collection="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.itfirma.model.PrijavaNaOglas">
+            <fields>
+                <field type="STRING" length="255" name="ime" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="prezime" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="email" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="adresa" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.itfirma.model.NivoObrazovanja" fetchType="LAZY" name="nivoObrazovanja" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="datumPodnosenja" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="preliminarnoOdobravanje" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.itfirma.model.StraniJezik">
+            <fields>
+                <field type="STRING" length="255" name="straniJezik" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.itfirma.model.UtisakIntervjuera">
+            <fields>
+                <field type="TEXT" length="255" name="licnaProcena" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="ocena" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="licniUtisak" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="preporuka" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="IT Firma">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="milijana.dj">
+      <firstName>Milijana</firstName>
+      <lastName>Djordjevic</lastName>
+      <title>Gdjica</title>
+      <jobTitle>HR menadzer</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="emina.t">
+      <firstName>Emina</firstName>
+      <lastName>Turkovic</lastName>
+      <title>Gdjica</title>
+      <jobTitle>HR menadzer</jobTitle>
+      <manager>milijana.dj</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="ksenija.p">
+      <firstName>Ksenija</firstName>
+      <lastName>Prcic</lastName>
+      <title>Gdjica</title>
+      <jobTitle>Senior tehnicko lice</jobTitle>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="eva.j">
+      <firstName>Eva</firstName>
+      <lastName>Jankovic</lastName>
+      <title>Gdjica</title>
+      <jobTitle>Kandidat</jobTitle>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Clan">
+      <displayName>Clan</displayName>
+    </role>
+    <role name="Sef">
+      <displayName>Sef</displayName>
+    </role>
+    <role name="Junior">
+      <displayName>Junior</displayName>
+    </role>
+    <role name="Medior">
+      <displayName>Medior</displayName>
+    </role>
+    <role name="Senior">
+      <displayName>Senior</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="ItFirma">
+      <displayName>IT Firma</displayName>
+    </group>
+    <group name="Kandidat" parentPath="/ItFirma">
+      <displayName>Kandidat</displayName>
+    </group>
+    <group name="HrSluzba" parentPath="/ItFirma">
+      <displayName>HR sluzba</displayName>
+    </group>
+    <group name="TehnickoLice" parentPath="/ItFirma">
+      <displayName>Tehnicko lice</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>milijana.dj</userName>
+      <roleName>Sef</roleName>
+      <groupName>HrSluzba</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>emina.t</userName>
+      <roleName>Clan</roleName>
+      <groupName>HrSluzba</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>ksenija.p</userName>
+      <roleName>Senior</roleName>
+      <groupName>TehnickoLice</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>eva.j</userName>
+      <roleName>Clan</roleName>
+      <groupName>Kandidat</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+  </memberships>
+</organization:Organization>

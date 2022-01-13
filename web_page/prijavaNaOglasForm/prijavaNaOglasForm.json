@@ -1,0 +1,909 @@
+{
+  "modelVersion" : "2.2",
+  "id" : "prijavaNaOglasForm",
+  "name" : "prijavaNaOglasForm",
+  "lastUpdate" : 1637526543710,
+  "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : { },
+        "reference" : "1c0b64fe-6186-47f2-ae1f-f26fc6a12261",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "level" : {
+                  "type" : "constant",
+                  "value" : "Level 1"
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{ task.displayName }}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "center"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                }
+              },
+              "reference" : "57bb1c9e-f635-43b9-b6ac-deef17fe3791",
+              "hasValidationError" : false,
+              "id" : "pbTitle",
+              "description" : ""
+            }
+          ],
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "allowHtml" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "label" : {
+                  "type" : "interpolation"
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{ task.displayDescription }}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                }
+              },
+              "reference" : "d89876af-2f15-4aec-9a16-d71c3ebef9ef",
+              "hasValidationError" : false,
+              "id" : "pbText",
+              "description" : ""
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "type" : "formContainer",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "ec02d218-8012-4414-8c5e-7aa812bd3219",
+        "hasValidationError" : false,
+        "id" : "pbFormContainer",
+        "container" : {
+          "type" : "container",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : { },
+          "reference" : "a2665440-744a-46f2-8929-5137e61b05f4",
+          "hasValidationError" : false,
+          "id" : "pbContainer",
+          "rows" : [
+            [
+              {
+                "type" : "container",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "repeatedCollection" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "67f8dc18-adeb-4b53-b63e-0987728baf44",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Ime"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "prijavaNaOglas.ime"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "0897b943-598b-41fe-ba41-47933c772844",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Prezime"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "prijavaNaOglas.prezime"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "1a26c25e-efa4-4bc2-a596-fd74f6f0e519",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Email"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "prijavaNaOglas.email"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "0aa3f7c0-2a88-422b-a3c2-81ef61e31fdc",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Adresa"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "prijavaNaOglas.adresa"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "a702068c-f7e2-4a9b-9ae3-5798828595fe",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "availableValues" : {
+                          "type" : "expression",
+                          "value" : "nivoObrazovanja_query"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Nivo Obrazovanja"
+                        },
+                        "placeholder" : {
+                          "type" : "constant",
+                          "value" : "Select a Nivo Obrazovanja"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "prijavaNaOglas_nivoObrazovanja"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "displayedKey" : {
+                          "type" : "constant",
+                          "value" : "nivoObrazovanja"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant"
+                        }
+                      },
+                      "reference" : "1c4da723-6367-471d-8afc-252e8c5916b7",
+                      "hasValidationError" : false,
+                      "id" : "pbSelect",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "dateFormat" : {
+                          "type" : "constant",
+                          "value" : "MM/dd/yyyy"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Datum Podnosenja"
+                        },
+                        "type" : {
+                          "type" : "constant"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "todayLabel" : {
+                          "type" : "constant",
+                          "value" : "Today"
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "showToday" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "placeholder" : {
+                          "type" : "constant",
+                          "value" : "Enter a date (mm/dd/yyyy)"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "prijavaNaOglas.datumPodnosenja"
+                        }
+                      },
+                      "reference" : "5b9119c2-5c9c-4f0b-bbec-ebc939a8f022",
+                      "hasValidationError" : false,
+                      "id" : "pbDatePicker",
+                      "description" : ""
+                    }
+                  ]
+                ]
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "removeItem" : {
+                    "type" : "variable"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "cssClasses" : {
+                    "type" : "expression",
+                    "value" : ""
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "primary"
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Submit"
+                  },
+                  "dataToSend" : {
+                    "type" : "expression",
+                    "value" : "formOutput"
+                  },
+                  "dataFromError" : {
+                    "type" : "variable",
+                    "value" : "formOutput._submitError"
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "collectionPosition" : {
+                    "type" : "constant"
+                  },
+                  "targetUrlOnSuccess" : {
+                    "type" : "interpolation",
+                    "value" : "/bonita"
+                  },
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "Submit task"
+                  },
+                  "collectionToModify" : {
+                    "type" : "variable"
+                  },
+                  "valueToAdd" : {
+                    "type" : "expression"
+                  },
+                  "disabled" : {
+                    "type" : "expression",
+                    "value" : "$form.$invalid"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
+                  }
+                },
+                "reference" : "611274bf-e3b6-4305-8722-1bfe2c23df58",
+                "hasValidationError" : false,
+                "id" : "pbButton",
+                "description" : ""
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "allowHtml" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "hidden" : {
+                    "type" : "expression",
+                    "value" : "!formOutput._submitError.message"
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : "alert alert-danger col-lg-6 col-lg-offset-3"
+                  },
+                  "label" : {
+                    "type" : "interpolation"
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "<strong>Debug message</strong>\n<br/>\n{{formOutput._submitError.message}}\n{{submit_errors_list}}"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "d8547742-caf6-4141-846b-e1936405a7e6",
+                "hasValidationError" : false,
+                "id" : "pbText",
+                "description" : ""
+              }
+            ]
+          ]
+        }
+      }
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "86219362-e8b9-4a7c-a4f0-a6c4dafdfc7b",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "46404692-7dcb-46dc-bc32-f97088bf7541",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "task" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/userTask/{{taskId}}"
+      ],
+      "exposed" : false
+    },
+    "submit_errors_list" : {
+      "type" : "expression",
+      "value" : [
+        "if($data.formOutput && $data.formOutput._submitError && $data.formOutput._submitError.explanations){",
+        "\tconst liElements = $data.formOutput._submitError.explanations",
+        "\t\t.filter(cause => cause !== null)",
+        "\t\t.map(cause => \"<li>\" + cause + \"</li>\")",
+        "\t\t.join('');",
+        "\tif(liElements){",
+        "\t\treturn \"<ul>\" + liElements + \"</ul>\";",
+        "\t}",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "formOutput" : {
+      "type" : "expression",
+      "value" : [
+        "if( $data.prijavaNaOglas && $data.prijavaNaOglas_nivoObrazovanja ){",
+        "\t//attach lazy references variables to parent variables",
+        "\t$data.prijavaNaOglas.nivoObrazovanja = $data.prijavaNaOglas_nivoObrazovanja;",
+        "\treturn {",
+        "\t\t//map prijavaNaOglas variable to expected task contract input",
+        "\t\tprijavaNaOglasInput: {",
+        "\t\t\time: $data.prijavaNaOglas.ime !== undefined ? $data.prijavaNaOglas.ime : null,",
+        "\t\t\tprezime: $data.prijavaNaOglas.prezime !== undefined ? $data.prijavaNaOglas.prezime : null,",
+        "\t\t\temail: $data.prijavaNaOglas.email !== undefined ? $data.prijavaNaOglas.email : null,",
+        "\t\t\tadresa: $data.prijavaNaOglas.adresa !== undefined ? $data.prijavaNaOglas.adresa : null,",
+        "\t\t\tnivoObrazovanja: $data.prijavaNaOglas.nivoObrazovanja ? {",
+        "\t\t\t\tpersistenceId_string: $data.prijavaNaOglas.nivoObrazovanja.persistenceId_string !== undefined ? $data.prijavaNaOglas.nivoObrazovanja.persistenceId_string : null",
+        "\t\t\t} : null,",
+        "\t\t\tdatumPodnosenja: $data.prijavaNaOglas.datumPodnosenja !== undefined ? $data.prijavaNaOglas.datumPodnosenja : null",
+        "\t\t}",
+        "\t}",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "context" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/userTask/{{taskId}}/context"
+      ],
+      "exposed" : false
+    },
+    "prijavaNaOglas" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.prijavaNaOglas_ref.link}}"
+      ],
+      "exposed" : false
+    },
+    "prijavaNaOglas_nivoObrazovanja" : {
+      "type" : "url",
+      "value" : [
+        "{{prijavaNaOglas|lazyRef:'nivoObrazovanja'}}"
+      ],
+      "exposed" : false
+    },
+    "taskId" : {
+      "type" : "urlparameter",
+      "value" : [
+        "id"
+      ],
+      "exposed" : false
+    },
+    "nivoObrazovanja_query" : {
+      "type" : "url",
+      "value" : [
+        "../API/bdm/businessData/com.itfirma.model.NivoObrazovanja?q=find&p=0&c=99"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "d1e858a5-e2a2-4aef-aa3f-acfc6d7e0136",
+  "type" : "form",
+  "description" : "Page generated with Bonita UI designer"
+}
