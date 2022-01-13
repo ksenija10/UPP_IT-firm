@@ -38,6 +38,16 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.itfirma.model.StavkaOpreme">
+            <fields>
+                <field type="STRING" length="255" name="tipProizvoda" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="brojKomada" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.itfirma.model.VrstaOpreme" fetchType="EAGER" name="vrstaOpreme" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.itfirma.model.StraniJezik">
             <fields>
                 <field type="STRING" length="255" name="straniJezik" nullable="true" collection="false"/>
@@ -52,6 +62,26 @@
                 <field type="INTEGER" length="255" name="ocena" nullable="true" collection="false"/>
                 <field type="TEXT" length="255" name="licniUtisak" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="preporuka" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.itfirma.model.VrstaOpreme">
+            <fields>
+                <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.itfirma.model.ZahtevZaNabavkuOpreme">
+            <fields>
+                <field type="STRING" length="255" name="ime" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="prezime" nullable="false" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.itfirma.model.StavkaOpreme" fetchType="LAZY" name="stavkaOpreme" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="obrazlozenje" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="maxBudzet" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>

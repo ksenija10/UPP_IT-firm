@@ -44,6 +44,23 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="tamara">
+      <firstName>Tamara</firstName>
+      <lastName>Rankovic</lastName>
+      <manager>ana</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="ana">
+      <firstName>Ana</firstName>
+      <lastName>Zivkovic</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="Clan">
@@ -75,6 +92,12 @@
     <group name="TehnickoLice" parentPath="/ItFirma">
       <displayName>Tehnicko lice</displayName>
     </group>
+    <group name="Sluzba nabavke" parentPath="/ItFirma">
+      <displayName>Sluzba nabavke</displayName>
+    </group>
+    <group name="Dobavljac" parentPath="/ItFirma">
+      <displayName>Dobavljac</displayName>
+    </group>
   </groups>
   <memberships>
     <membership>
@@ -99,6 +122,18 @@
       <userName>eva.j</userName>
       <roleName>Clan</roleName>
       <groupName>Kandidat</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>tamara</userName>
+      <roleName>Clan</roleName>
+      <groupName>TehnickoLice</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>ana</userName>
+      <roleName>Clan</roleName>
+      <groupName>TehnickoLice</groupName>
       <groupParentPath>/ItFirma</groupParentPath>
     </membership>
   </memberships>
