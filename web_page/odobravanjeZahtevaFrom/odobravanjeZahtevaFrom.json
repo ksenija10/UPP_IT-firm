@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "odobravanjeZahtevaFrom",
   "name" : "odobravanjeZahtevaFrom",
-  "lastUpdate" : 1642161747795,
+  "lastUpdate" : 1642192291794,
   "rows" : [
     [
       {
@@ -828,7 +828,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Zahtev Prihvacen Input"
+                    "value" : "Zahtev Prihvacen"
                   },
                   "dimension" : {
                     "type" : "constant",
@@ -837,6 +837,10 @@
                   "value" : {
                     "type" : "variable",
                     "value" : "formInput.zahtevPrihvacenInput"
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : false
                   }
                 },
                 "reference" : "1fd7b0af-120b-4a89-a0b7-1623390e4ec7",

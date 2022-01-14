@@ -48,8 +48,12 @@
       <firstName>Tamara</firstName>
       <lastName>Rankovic</lastName>
       <manager>ana</manager>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>eminaturkovic600@gmail.com</email>
+      </personalData>
+      <professionalData>
+        <email>eminaturkovic600@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
