@@ -61,6 +61,32 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="maida">
+      <firstName>Maida</firstName>
+      <lastName>Turkovic</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="nata">
+      <firstName>Nastasija</firstName>
+      <lastName>Stevovic</lastName>
+      <manager>maida</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="milan">
+      <firstName>Milan</firstName>
+      <lastName>Maric</lastName>
+      <manager>maida</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="Clan">
@@ -97,6 +123,12 @@
     </group>
     <group name="Dobavljac" parentPath="/ItFirma">
       <displayName>Dobavljac</displayName>
+    </group>
+    <group name="Sluzba nabavke zaposleni" parentPath="/ItFirma/Sluzba nabavke">
+      <displayName>Sluzba nabavke zaposleni</displayName>
+    </group>
+    <group name="Sluzba nabavke nadredjeni" parentPath="/ItFirma/Sluzba nabavke">
+      <displayName>Sluzba nabavke nadredjeni</displayName>
     </group>
   </groups>
   <memberships>
@@ -135,6 +167,24 @@
       <roleName>Clan</roleName>
       <groupName>TehnickoLice</groupName>
       <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>maida</userName>
+      <roleName>Sef</roleName>
+      <groupName>Sluzba nabavke nadredjeni</groupName>
+      <groupParentPath>/ItFirma/Sluzba nabavke</groupParentPath>
+    </membership>
+    <membership>
+      <userName>nata</userName>
+      <roleName>Clan</roleName>
+      <groupName>Sluzba nabavke zaposleni</groupName>
+      <groupParentPath>/ItFirma/Sluzba nabavke</groupParentPath>
+    </membership>
+    <membership>
+      <userName>milan</userName>
+      <roleName>Clan</roleName>
+      <groupName>Sluzba nabavke zaposleni</groupName>
+      <groupParentPath>/ItFirma/Sluzba nabavke</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>
