@@ -96,5 +96,16 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.itfirma.model.ZahtevZaPonude">
+            <fields>
+                <field type="STRING" length="255" name="nazivOpreme" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="nedostajucaKolicina" nullable="false" collection="false"/>
+                <field type="DOUBLE" length="255" name="cena" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="najboljaPonuda" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
     </businessObjects>
 </businessObjectModel>
