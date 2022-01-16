@@ -91,6 +91,22 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="jovana">
+      <firstName>Jovana</firstName>
+      <lastName>Djuric</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="marija">
+      <firstName>Marija</firstName>
+      <lastName>Milinkovic</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="Clan">
@@ -189,6 +205,18 @@
       <roleName>Clan</roleName>
       <groupName>Sluzba nabavke zaposleni</groupName>
       <groupParentPath>/ItFirma/Sluzba nabavke</groupParentPath>
+    </membership>
+    <membership>
+      <userName>jovana</userName>
+      <roleName>Clan</roleName>
+      <groupName>Dobavljac</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>marija</userName>
+      <roleName>Clan</roleName>
+      <groupName>Dobavljac</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>
