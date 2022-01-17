@@ -1271,7 +1271,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_ICj-x3b3EeyFBsLCDI9XgA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_ICj-xnb3EeyFBsLCDI9XgA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_Iq4jAHb3EeyFBsLCDI9XgA">
-            <targetForm xmi:type="expression:Expression" xmi:id="_MZb4YHb3EeyFBsLCDI9XgA" name="novPrikazForm" content="a4c6ba59-ceff-4102-a855-ece047f1eb57" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_qa2qEHemEeyUEdY53mrXaw" name="prikazSvihPrethodnihPonudaForm" content="cf118746-be9c-4fdc-9b36-d8dc79573c39" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <filters xmi:type="process:ActorFilter" xmi:id="_MqEf8Hb4EeyFBsLCDI9XgA" name="izabrani radnik sluzbe nabavke" definitionId="bonita-actorfilter-single-user" definitionVersion="1.0.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_MqEf8Xb4EeyFBsLCDI9XgA" definitionId="bonita-actorfilter-single-user" version="1.0.0">
@@ -1297,6 +1297,9 @@
               <inputNames>ponudeInput</inputNames>
             </constraints>
             <constraints xmi:type="process:ContractConstraint" xmi:id="_K-pVaHb3EeyFBsLCDI9XgA" expression="ponudeInput?.cena.flatten().every{it!=null}" errorMessage="cena is mandatory for PonudaDobavljaca" name="mandatory_ponudeInput_cena">
+              <inputNames>ponudeInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_u9UakHekEeyUEdY53mrXaw" expression="List najPonuda = new ArrayList&lt;>()&#xD;&#xA;ponudeInput.each{&#xD;&#xA;&#x9;if(it.najboljaPonuda == true){&#xD;&#xA;&#x9;&#x9;najPonuda.add(it.nazivOpreme);&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;boolean allEqual = true;&#xD;&#xA;for(String na : najPonuda){&#xD;&#xA;&#x9;if(na != najPonuda.get(0)){&#xD;&#xA;&#x9;&#x9;allEqual = false;&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;return !allEqual;" errorMessage="stavke se moraju razlikovati" name="obe_stavke_pripadaju_istoj_ponudi" description="stavke se moraju razlikovati">
               <inputNames>ponudeInput</inputNames>
             </constraints>
           </contract>
@@ -1523,7 +1526,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_LRdKYXb8EeyFBsLCDI9XgA" name="init_najboljaPonuda()" content="List naj = new ArrayList&lt;>();&#xD;&#xA;return naj;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_nfexhHSuEeyrPuPSgE9Zog">
-        <targetForm xmi:type="expression:Expression" xmi:id="_SM8LQHb7EeyFBsLCDI9XgA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_3SLsYHenEeyUEdY53mrXaw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_nfexhnSuEeyrPuPSgE9Zog">
         <targetForm xmi:type="expression:Expression" xmi:id="_nfexh3SuEeyrPuPSgE9Zog" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
