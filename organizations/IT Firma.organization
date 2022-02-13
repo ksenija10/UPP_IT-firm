@@ -98,8 +98,12 @@
       <firstName>Tamara</firstName>
       <lastName>Rankovic</lastName>
       <manager>ana</manager>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>eminaturkovic600@gmail.com</email>
+      </personalData>
+      <professionalData>
+        <email>eminaturkovic600@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -115,8 +119,12 @@
     <user userName="ana">
       <firstName>Ana</firstName>
       <lastName>Zivkovic</lastName>
-      <personalData/>
-      <professionalData/>
+      <personalData>
+        <email>eminaturkovic600@gmail.com</email>
+      </personalData>
+      <professionalData>
+        <email>eminaturkovic600@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -166,6 +174,90 @@
           <value>2,3</value>
         </customUserInfoValue>
       </customUserInfoValues>
+    </user>
+    <user userName="maida">
+      <firstName>Maida</firstName>
+      <lastName>Turkovic</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="nata">
+      <firstName>Nastasija</firstName>
+      <lastName>Stevovic</lastName>
+      <manager>maida</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="milan">
+      <firstName>Milan</firstName>
+      <lastName>Maric</lastName>
+      <manager>maida</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="jovana">
+      <firstName>Jovana</firstName>
+      <lastName>Djuric</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="marija">
+      <firstName>Marija</firstName>
+      <lastName>Milinkovic</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="maida">
+      <firstName>Maida</firstName>
+      <lastName>Turkovic</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="nata">
+      <firstName>Nastasija</firstName>
+      <lastName>Stevovic</lastName>
+      <manager>maida</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="milan">
+      <firstName>Milan</firstName>
+      <lastName>Maric</lastName>
+      <manager>maida</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="jovana">
+      <firstName>Jovana</firstName>
+      <lastName>Djuric</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="marija">
+      <firstName>Marija</firstName>
+      <lastName>Milinkovic</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
     </user>
   </users>
   <roles>
@@ -255,6 +347,66 @@
       <userName>marina.b</userName>
       <roleName>Clan</roleName>
       <groupName>TimZaStraneJezike</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>maida</userName>
+      <roleName>Sef</roleName>
+      <groupName>Sluzba nabavke nadredjeni</groupName>
+      <groupParentPath>/ItFirma/Sluzba nabavke</groupParentPath>
+    </membership>
+    <membership>
+      <userName>nata</userName>
+      <roleName>Clan</roleName>
+      <groupName>Sluzba nabavke zaposleni</groupName>
+      <groupParentPath>/ItFirma/Sluzba nabavke</groupParentPath>
+    </membership>
+    <membership>
+      <userName>milan</userName>
+      <roleName>Clan</roleName>
+      <groupName>Sluzba nabavke zaposleni</groupName>
+      <groupParentPath>/ItFirma/Sluzba nabavke</groupParentPath>
+    </membership>
+    <membership>
+      <userName>jovana</userName>
+      <roleName>Clan</roleName>
+      <groupName>Dobavljac</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>marija</userName>
+      <roleName>Clan</roleName>
+      <groupName>Dobavljac</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>maida</userName>
+      <roleName>Sef</roleName>
+      <groupName>Sluzba nabavke nadredjeni</groupName>
+      <groupParentPath>/ItFirma/Sluzba nabavke</groupParentPath>
+    </membership>
+    <membership>
+      <userName>nata</userName>
+      <roleName>Clan</roleName>
+      <groupName>Sluzba nabavke zaposleni</groupName>
+      <groupParentPath>/ItFirma/Sluzba nabavke</groupParentPath>
+    </membership>
+    <membership>
+      <userName>milan</userName>
+      <roleName>Clan</roleName>
+      <groupName>Sluzba nabavke zaposleni</groupName>
+      <groupParentPath>/ItFirma/Sluzba nabavke</groupParentPath>
+    </membership>
+    <membership>
+      <userName>jovana</userName>
+      <roleName>Clan</roleName>
+      <groupName>Dobavljac</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>marija</userName>
+      <roleName>Clan</roleName>
+      <groupName>Dobavljac</groupName>
       <groupParentPath>/ItFirma</groupParentPath>
     </membership>
   </memberships>
