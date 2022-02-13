@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.2",
-  "id" : "analizaPrijaveForm",
-  "name" : "analizaPrijaveForm",
-  "lastUpdate" : 1637528946941,
+  "id" : "ocenaIntervjueraForma",
+  "name" : "ocenaIntervjueraForma",
+  "lastUpdate" : 1642642589899,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "fab1fe3b-83c0-4149-8454-c7394e089dd6",
+        "reference" : "6b2bbc71-286d-4ccb-ba16-d3b3c20093c0",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "5e77c5ea-6c50-4bd9-b989-085eb85dcd1c",
+              "reference" : "ba85c4d3-89de-4870-8639-c17f6eb07236",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "ab98c24a-e4cd-46e4-83b7-921a1d005280",
+              "reference" : "d4e91f81-8872-4cda-a389-827bdd1077c1",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "a10a576f-b51b-4eb6-a2d8-bc06a154dfb7",
+        "reference" : "af8807ce-55d0-4fc8-9419-cdb070fdb4fe",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "9bb20944-72ae-4561-b82d-0a990d707340",
+          "reference" : "ea86b419-b20a-4a62-ba55-881b98818625",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -151,7 +151,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Prijava Na Oglas"
+                    "value" : "Licna Procena Input"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -162,7 +162,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "cdd80706-d159-4ef1-a8ff-9927720c1d41",
+                "reference" : "66d50532-c7d8-4297-9514-b94a109c7766",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -179,8 +179,7 @@
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
-                    "type" : "variable",
-                    "value" : ""
+                    "type" : "variable"
                   },
                   "hidden" : {
                     "type" : "constant",
@@ -195,7 +194,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "ed0276d3-9f73-4f01-838d-8f5e19c40248",
+                "reference" : "5d7de792-14cd-4431-8ffb-56a6fd28aaf9",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -209,379 +208,40 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "expression",
-                          "value" : "!prijavaNaOglas.ime"
-                        },
-                        "cssClasses" : {
                           "type" : "constant",
-                          "value" : ""
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Ime"
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{prijavaNaOglas.ime}}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
+                          "value" : false
                         },
                         "labelPosition" : {
                           "type" : "constant",
                           "value" : "top"
                         },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
-                        }
-                      },
-                      "reference" : "2ca92074-ee2e-4ea3-84a1-a041fb558cbf",
-                      "hasValidationError" : false,
-                      "id" : "pbText",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!prijavaNaOglas.prezime"
-                        },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Prezime"
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{prijavaNaOglas.prezime}}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
                         },
                         "labelWidth" : {
                           "type" : "constant",
-                          "value" : 4
+                          "value" : 1
                         },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
-                        }
-                      },
-                      "reference" : "04b2fd8f-a89a-4744-b04c-50a30f1bbe8a",
-                      "hasValidationError" : false,
-                      "id" : "pbText",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!prijavaNaOglas.email"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Email"
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{prijavaNaOglas.email}}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
-                        }
-                      },
-                      "reference" : "a9e636e5-265b-4e59-b169-b0e311c83312",
-                      "hasValidationError" : false,
-                      "id" : "pbText",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!prijavaNaOglas.adresa"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Adresa"
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{prijavaNaOglas.adresa}}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
-                        }
-                      },
-                      "reference" : "37751a00-a1ea-42d6-8772-a04d3859b5f0",
-                      "hasValidationError" : false,
-                      "id" : "pbText",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!prijavaNaOglas_nivoObrazovanja.nivoObrazovanja"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Nivo Obrazovanja"
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{prijavaNaOglas_nivoObrazovanja.nivoObrazovanja}}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
-                        }
-                      },
-                      "reference" : "d2863faa-dc49-47cc-9327-86fcf9c37fd5",
-                      "hasValidationError" : false,
-                      "id" : "pbText",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!prijavaNaOglas.datumPodnosenja"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Datum Podnosenja"
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{prijavaNaOglas.datumPodnosenja|uiDate}}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        }
-                      },
-                      "reference" : "45982d10-2ef1-4a04-9209-1de33a749451",
-                      "hasValidationError" : false,
-                      "id" : "pbText",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "disabled" : {
+                        "readOnly" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Odobravanje prijave"
+                          "value" : "Ocena"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "number"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -589,17 +249,187 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "prijavaNaOglas.preliminarnoOdobravanje"
+                          "value" : "formInput.licnaProcenaInput.ocena"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "max" : {
+                          "type" : "constant",
+                          "value" : 5
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
-                      "reference" : "63e2c39e-18cb-42ef-959d-e0e3c3b51106",
+                      "reference" : "5f24b68c-e4e7-42c9-8693-f7a465876814",
                       "hasValidationError" : false,
-                      "id" : "pbCheckbox",
+                      "id" : "pbInput",
                       "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Utisak"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.licnaProcenaInput.utisak"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "3fb3293c-2712-48fd-9866-cba34aaf54a3",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Subjektivni utisak"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "inline" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "availableValues" : {
+                          "type" : "expression",
+                          "value" : "radioButtonData"
+                        },
+                        "displayedKey" : {
+                          "type" : "constant",
+                          "value" : "label"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant",
+                          "value" : "value"
+                        },
+                        "selectedValue" : {
+                          "type" : "variable",
+                          "value" : "formInput.licnaProcenaInput.procena"
+                        }
+                      },
+                      "reference" : "32d4b3dc-2231-48ba-8885-57acb13790cd",
+                      "hasValidationError" : false,
+                      "id" : "pbRadioButtons"
                     }
                   ]
                 ]
@@ -676,7 +506,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "c065d64a-e905-417b-8644-1bbbae415d66",
+                "reference" : "d78439e3-37fa-4feb-839b-5db7c30f57a7",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -728,7 +558,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "31ddff58-5eec-46c0-8ea5-493e26ec7966",
+                "reference" : "e194325c-737a-489e-96a7-74d2ea5ec462",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -741,14 +571,14 @@
   ],
   "assets" : [
     {
-      "id" : "b1431324-1f23-4673-818a-0fe051252fca",
+      "id" : "2970dacd-ebe6-47f6-b8e3-b5f7cc64c588",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "1a0fbadd-47f8-4791-94d4-f45a567fbc5c",
+      "id" : "5c74e76d-52a9-4ccc-9816-70c1fe8b0b3f",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
@@ -761,6 +591,19 @@
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}"
+      ],
+      "exposed" : false
+    },
+    "formInput" : {
+      "type" : "json",
+      "value" : [
+        "{\r",
+        "  \"licnaProcenaInput\" : {\r",
+        "    \"ocena\" : 0,\r",
+        "    \"utisak\" : \"\",\r",
+        "    \"procena\" : false\r",
+        "  }\r",
+        "}"
       ],
       "exposed" : false
     },
@@ -782,15 +625,8 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.prijavaNaOglas && $data.prijavaNaOglas_nivoObrazovanja ){",
-        "\t//attach lazy references variables to parent variables",
-        "\t$data.prijavaNaOglas.nivoObrazovanja = $data.prijavaNaOglas_nivoObrazovanja;",
-        "\treturn {",
-        "\t\t//map prijavaNaOglas variable to expected task contract input",
-        "\t\tprijavaNaOglasInput: {",
-        "\t\t\tpreliminarnoOdobravanje: $data.prijavaNaOglas.preliminarnoOdobravanje !== undefined ? $data.prijavaNaOglas.preliminarnoOdobravanje : null",
-        "\t\t}",
-        "\t}",
+        "return {",
+        "\tlicnaProcenaInput: $data.formInput.licnaProcenaInput",
         "}"
       ],
       "exposed" : false
@@ -802,30 +638,24 @@
       ],
       "exposed" : false
     },
-    "prijavaNaOglas" : {
-      "type" : "url",
-      "value" : [
-        "../{{context.prijavaNaOglas_ref.link}}"
-      ],
-      "exposed" : false
-    },
-    "prijavaNaOglas_nivoObrazovanja" : {
-      "type" : "url",
-      "value" : [
-        "{{prijavaNaOglas|lazyRef:'nivoObrazovanja'}}"
-      ],
-      "exposed" : false
-    },
     "taskId" : {
       "type" : "urlparameter",
       "value" : [
         "id"
       ],
       "exposed" : false
+    },
+    "radioButtonData" : {
+      "type" : "json",
+      "value" : [
+        "[{\"label\": \"Preporucujem\", \"value\": true},",
+        "{\"label\": \"Ne preporucujem\", \"value\": false}]"
+      ],
+      "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "c8c2d16d-3be2-4ba1-a5d8-818221f33ca6",
+  "uuid" : "16343fa2-6b6b-4152-99a8-9d0ca370eb54",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

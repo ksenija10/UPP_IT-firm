@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="IT Firma">
-  <customUserInfoDefinitions/>
+  <customUserInfoDefinitions>
+    <customUserInfoDefinition>
+      <name>nivoObrazovanja</name>
+      <description></description>
+    </customUserInfoDefinition>
+    <customUserInfoDefinition>
+      <name>strucniJezik</name>
+      <description></description>
+    </customUserInfoDefinition>
+  </customUserInfoDefinitions>
   <users>
     <user userName="milijana.dj">
       <firstName>Milijana</firstName>
@@ -11,7 +20,16 @@
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>nivoObrazovanja</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>strucniJezik</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="emina.t">
       <firstName>Emina</firstName>
@@ -22,7 +40,16 @@
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>nivoObrazovanja</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>strucniJezik</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="ksenija.p">
       <firstName>Ksenija</firstName>
@@ -32,7 +59,16 @@
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>nivoObrazovanja</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>strucniJezik</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="eva.j">
       <firstName>Eva</firstName>
@@ -40,9 +76,23 @@
       <title>Gdjica</title>
       <jobTitle>Kandidat</jobTitle>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>evaj.evadesign@gmail.com</email>
+        <address>Milosa Crnjanskog 23</address>
+        <city>Sabac</city>
+        <country>Serbia</country>
+      </professionalData>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>nivoObrazovanja</name>
+          <value>1</value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>strucniJezik</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="tamara">
       <firstName>Tamara</firstName>
@@ -51,7 +101,16 @@
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>nivoObrazovanja</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>strucniJezik</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
     <user userName="ana">
       <firstName>Ana</firstName>
@@ -59,7 +118,54 @@
       <personalData/>
       <professionalData/>
       <password encrypted="false">bpm</password>
-      <customUserInfoValues/>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>nivoObrazovanja</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>strucniJezik</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="milica.k">
+      <firstName>Milica</firstName>
+      <lastName>Karanov</lastName>
+      <title>Gdjica</title>
+      <jobTitle>Filolog</jobTitle>
+      <manager>emina.t</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>nivoObrazovanja</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>strucniJezik</name>
+          <value>1,2</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
+    <user userName="marina.b">
+      <firstName>Marina</firstName>
+      <lastName>Bajic</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>nivoObrazovanja</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>strucniJezik</name>
+          <value>2,3</value>
+        </customUserInfoValue>
+      </customUserInfoValues>
     </user>
   </users>
   <roles>
@@ -89,14 +195,17 @@
     <group name="HrSluzba" parentPath="/ItFirma">
       <displayName>HR sluzba</displayName>
     </group>
-    <group name="TehnickoLice" parentPath="/ItFirma">
-      <displayName>Tehnicko lice</displayName>
-    </group>
     <group name="Sluzba nabavke" parentPath="/ItFirma">
       <displayName>Sluzba nabavke</displayName>
     </group>
     <group name="Dobavljac" parentPath="/ItFirma">
       <displayName>Dobavljac</displayName>
+    </group>
+    <group name="ProjektniTim" parentPath="/ItFirma">
+      <displayName>Projektni tim</displayName>
+    </group>
+    <group name="TimZaStraneJezike" parentPath="/ItFirma">
+      <displayName>Tim za strane jezike</displayName>
     </group>
   </groups>
   <memberships>
@@ -113,27 +222,39 @@
       <groupParentPath>/ItFirma</groupParentPath>
     </membership>
     <membership>
-      <userName>ksenija.p</userName>
-      <roleName>Senior</roleName>
-      <groupName>TehnickoLice</groupName>
-      <groupParentPath>/ItFirma</groupParentPath>
-    </membership>
-    <membership>
       <userName>eva.j</userName>
       <roleName>Clan</roleName>
       <groupName>Kandidat</groupName>
       <groupParentPath>/ItFirma</groupParentPath>
     </membership>
     <membership>
-      <userName>tamara</userName>
-      <roleName>Clan</roleName>
-      <groupName>TehnickoLice</groupName>
+      <userName>ana</userName>
+      <roleName>Medior</roleName>
+      <groupName>ProjektniTim</groupName>
       <groupParentPath>/ItFirma</groupParentPath>
     </membership>
     <membership>
-      <userName>ana</userName>
+      <userName>tamara</userName>
+      <roleName>Senior</roleName>
+      <groupName>ProjektniTim</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>ksenija.p</userName>
+      <roleName>Senior</roleName>
+      <groupName>ProjektniTim</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>milica.k</userName>
       <roleName>Clan</roleName>
-      <groupName>TehnickoLice</groupName>
+      <groupName>TimZaStraneJezike</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>marina.b</userName>
+      <roleName>Clan</roleName>
+      <groupName>TimZaStraneJezike</groupName>
       <groupParentPath>/ItFirma</groupParentPath>
     </membership>
   </memberships>
