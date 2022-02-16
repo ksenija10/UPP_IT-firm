@@ -98,6 +98,9 @@
             <constraints xmi:type="process:ContractConstraint" xmi:id="_RhiyLnS8EeyrPuPSgE9Zog" expression="zahtevInput?.stavkaOpreme?.vrstaOpreme.flatten().every{!it || it.persistenceId_string}" errorMessage="VrstaOpreme must reference an existing instance with a persistenceId for StavkaOpreme" name="aggregation_zahtevInput_stavkaOpreme_vrstaOpreme">
               <inputNames>zahtevInput</inputNames>
             </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_Gcq3cI8_EeyhafY84QkMtg" expression="zahtevInput?.stavkaOpreme?.brojKomada.flatten().every{it >=1 }" errorMessage="Broj komada mora biti pozitivan!" name="kolicina_pozitivna" description="Broj komada mora biti pozitivan!">
+              <inputNames>zahtevInput</inputNames>
+            </constraints>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_yjPt_HS7EeyrPuPSgE9Zog" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
@@ -2124,7 +2127,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="___CFwXe9EeyUEdY53mrXaw" content="" returnType="java.lang.Boolean"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_nfexhHSuEeyrPuPSgE9Zog">
-        <targetForm xmi:type="expression:Expression" xmi:id="_3WDvkI88EeyhafY84QkMtg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_BYSNAI8-EeyhafY84QkMtg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_nfexhnSuEeyrPuPSgE9Zog">
         <targetForm xmi:type="expression:Expression" xmi:id="_nfexh3SuEeyrPuPSgE9Zog" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
