@@ -217,6 +217,21 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="gost">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">gost</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>nivoObrazovanja</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>strucniJezik</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
   </users>
   <roles>
     <role name="Clan">
@@ -256,6 +271,9 @@
     </group>
     <group name="TimZaStraneJezike" parentPath="/ItFirma">
       <displayName>Tim za strane jezike</displayName>
+    </group>
+    <group name="Gost" parentPath="/ItFirma">
+      <displayName>Gost</displayName>
     </group>
   </groups>
   <memberships>
@@ -305,6 +323,12 @@
       <userName>marina.b</userName>
       <roleName>Clan</roleName>
       <groupName>TimZaStraneJezike</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>gost</userName>
+      <roleName>Clan</roleName>
+      <groupName>Gost</groupName>
       <groupParentPath>/ItFirma</groupParentPath>
     </membership>
   </memberships>
