@@ -53,6 +53,17 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.itfirma.model.Porudzbenica">
+            <fields>
+                <field type="STRING" length="255" name="imeKupca" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="prezimeKupca" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="zahtevaneOpreme" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="ukupnaCena" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.itfirma.model.PrijavaNaOglas">
             <fields>
                 <field type="STRING" length="255" name="ime" nullable="true" collection="false"/>
