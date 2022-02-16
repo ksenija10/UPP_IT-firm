@@ -1737,6 +1737,9 @@
             <constraints xmi:type="process:ContractConstraint" xmi:id="_u9UakHekEeyUEdY53mrXaw" expression="List najPonuda = new ArrayList&lt;>()&#xD;&#xA;ponudeInput.each{&#xD;&#xA;&#x9;if(it.najboljaPonuda == true){&#xD;&#xA;&#x9;&#x9;najPonuda.add(it.nazivOpreme);&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;if (najPonuda.size() == 1) {&#xD;&#xA;&#x9;return true;&#xD;&#xA;}&#xD;&#xA;boolean allEqual = true;&#xD;&#xA;for(String na : najPonuda){&#xD;&#xA;&#x9;if(na != najPonuda.get(0)){&#xD;&#xA;&#x9;&#x9;allEqual = false;&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;return !allEqual;" errorMessage="stavke se moraju razlikovati" name="obe_stavke_pripadaju_istoj_ponudi" description="stavke se moraju razlikovati">
               <inputNames>ponudeInput</inputNames>
             </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_umPvgI8rEeyhafY84QkMtg" expression="import java.util.logging.Logger;&#xD;&#xA;&#xD;&#xA;Logger logger = Logger.getLogger (&quot;com.company.it-firm&quot;);&#xD;&#xA;List najPonuda = new ArrayList&lt;>()&#xD;&#xA;ponudeInput.each{&#xD;&#xA;&#x9;if(it.najboljaPonuda == true){&#xD;&#xA;&#x9;&#x9;logger.info(&quot;CEO OBJEKAT IZ LISTE:&quot;  + it);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;najPonuda.add(it.persistenceId_string);&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;logger.info(&quot;VELICINA LISTE:&quot;  + ponudeInput.size()/2);&#xD;&#xA;&#xD;&#xA;if (najPonuda.size() != ponudeInput.size()/2) {&#xD;&#xA;&#x9;logger.info(&quot;USLO TU GDE TREBA&quot;);&#x9;&#xD;&#xA;&#x9;return false;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;for(int i = 0; i&lt;najPonuda.size()-1 ; i++){&#xD;&#xA;&#x9;for(int k = i+1 ; k&lt;najPonuda.size(); k++){&#xD;&#xA;&#x9;&#x9;if(!( Math.abs(najPonuda.get(i).toInteger() - najPonuda.get(k).toInteger())==0 || Math.abs(najPonuda.get(i).toInteger() - najPonuda.get(k).toInteger())==1 )){&#xD;&#xA;&#x9;&#x9;&#x9;return false;&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;return true;" errorMessage="Stavke moraju pripadati ponudi istog dobavljaca" name="obe_stavke_isti_dobavljac" description="Stavke moraju pripadati ponudi istog dobavljaca">
+              <inputNames>ponudeInput</inputNames>
+            </constraints>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_Iq4jAnb3EeyFBsLCDI9XgA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
@@ -1835,6 +1838,9 @@
             <inputs xmi:type="process:ContractInput" xmi:id="_yp8l4He7EeyUEdY53mrXaw" name="odobravanjePonudeInput" type="BOOLEAN">
               <mapping xmi:type="process:ContractInputMapping" xmi:id="_yp8l4Xe7EeyUEdY53mrXaw"/>
             </inputs>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_pMxgsI88EeyhafY84QkMtg" expression="if (odobravanjePonudeInput == false){&#xD;&#xA;&#x9;return false;&#xD;&#xA;}else {&#xD;&#xA;&#x9;return true;&#xD;&#xA;}" errorMessage="Ponuda mora biti odobrena" name="ponuda_odobrena" description="Ponuda mora biti odobrena">
+              <inputNames>odobravanjePonudeInput</inputNames>
+            </constraints>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_QAzSjHe5EeyUEdY53mrXaw" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
@@ -1880,6 +1886,9 @@
             <inputs xmi:type="process:ContractInput" xmi:id="_F19VgHfBEeyUEdY53mrXaw" name="odobravanjePonude" type="BOOLEAN">
               <mapping xmi:type="process:ContractInputMapping" xmi:id="_F19VgXfBEeyUEdY53mrXaw"/>
             </inputs>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_dtaE8I89EeyhafY84QkMtg" expression="if (odobravanjePonude == true) {&#xD;&#xA;&#x9;return false;&#xD;&#xA;}else {&#xD;&#xA;&#x9;return true;&#xD;&#xA;}" errorMessage="Ponuda ne moze da se odobri!" name="ponuda_neodobravanje" description="Ponuda ne moze da se odobri!">
+              <inputNames>odobravanjePonude</inputNames>
+            </constraints>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_0z3KrHe5EeyUEdY53mrXaw" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
@@ -1910,6 +1919,9 @@
             <inputs xmi:type="process:ContractInput" xmi:id="_U0rCcHe_EeyUEdY53mrXaw" name="odobravanjePonudeInput" type="BOOLEAN">
               <mapping xmi:type="process:ContractInputMapping" xmi:id="_U0rCcXe_EeyUEdY53mrXaw"/>
             </inputs>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_vB4dcI89EeyhafY84QkMtg" expression="if(odobravanjePonudeInput == false){&#xD;&#xA;&#x9;return false;&#xD;&#xA;}else {&#xD;&#xA;&#x9;return true;&#xD;&#xA;}" errorMessage="Ponuda mora biti odobrena!" name="odobravanje_ponude" description="Ponuda mora biti odobrena!">
+              <inputNames>odobravanjePonudeInput</inputNames>
+            </constraints>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_DSuOrHe_EeyUEdY53mrXaw" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
@@ -2112,7 +2124,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="___CFwXe9EeyUEdY53mrXaw" content="" returnType="java.lang.Boolean"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_nfexhHSuEeyrPuPSgE9Zog">
-        <targetForm xmi:type="expression:Expression" xmi:id="_oT_EUI6IEeyvIop4azukOQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_3WDvkI88EeyhafY84QkMtg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_nfexhnSuEeyrPuPSgE9Zog">
         <targetForm xmi:type="expression:Expression" xmi:id="_nfexh3SuEeyrPuPSgE9Zog" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -2563,7 +2575,7 @@
             </children>
             <children xmi:type="notation:Shape" xmi:id="_0z3KrXe5EeyUEdY53mrXaw" type="3005" element="_0z3KoHe5EeyUEdY53mrXaw" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_00AUkHe5EeyUEdY53mrXaw" type="5005"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0z3Krne5EeyUEdY53mrXaw" x="2168" y="579" width="120" height="60"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0z3Krne5EeyUEdY53mrXaw" x="2168" y="582" width="120" height="60"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_DSuOrXe_EeyUEdY53mrXaw" type="3005" element="_DSuOoHe_EeyUEdY53mrXaw" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_DSuOr3e_EeyUEdY53mrXaw" type="5005"/>
