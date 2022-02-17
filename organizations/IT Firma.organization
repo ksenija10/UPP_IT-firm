@@ -275,6 +275,12 @@
     <group name="Gost" parentPath="/ItFirma">
       <displayName>Gost</displayName>
     </group>
+    <group name="Sluzba nabavke zaposleni" parentPath="/ItFirma/Sluzba nabavke">
+      <displayName>Sluzba nabavke zaposleni</displayName>
+    </group>
+    <group name="Sluzba nabavke nadredjeni" parentPath="/ItFirma/Sluzba nabavke">
+      <displayName>Sluzba nabavke nadredjeni</displayName>
+    </group>
   </groups>
   <memberships>
     <membership>
@@ -329,6 +335,36 @@
       <userName>gost</userName>
       <roleName>Clan</roleName>
       <groupName>Gost</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>maida</userName>
+      <roleName>Clan</roleName>
+      <groupName>Sluzba nabavke nadredjeni</groupName>
+      <groupParentPath>/ItFirma/Sluzba nabavke</groupParentPath>
+    </membership>
+    <membership>
+      <userName>milan</userName>
+      <roleName>Clan</roleName>
+      <groupName>Sluzba nabavke zaposleni</groupName>
+      <groupParentPath>/ItFirma/Sluzba nabavke</groupParentPath>
+    </membership>
+    <membership>
+      <userName>nata</userName>
+      <roleName>Clan</roleName>
+      <groupName>Sluzba nabavke zaposleni</groupName>
+      <groupParentPath>/ItFirma/Sluzba nabavke</groupParentPath>
+    </membership>
+    <membership>
+      <userName>marija</userName>
+      <roleName>Clan</roleName>
+      <groupName>Dobavljac</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>jovana</userName>
+      <roleName>Clan</roleName>
+      <groupName>Dobavljac</groupName>
       <groupParentPath>/ItFirma</groupParentPath>
     </membership>
   </memberships>
