@@ -1319,6 +1319,9 @@
             <inputs xmi:type="process:ContractInput" xmi:id="_nCjFwI_1EeyeNfLnxuaf1w" name="fakturaInput" type="COMPLEX" dataReference="faktura" createMode="false">
               <inputs xmi:type="process:ContractInput" xmi:id="_nCjFwY_1EeyeNfLnxuaf1w" name="potpisSefaZaposlenog" type="BOOLEAN" createMode="false"/>
             </inputs>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="__6e2YI_6EeyeNfLnxuaf1w" expression="fakturaInput?.potpisSefaZaposlenog != false" errorMessage="Potpis je obavezan!" name="potpis_obavezan" description="Potpis je obavezan!">
+              <inputNames>fakturaInput</inputNames>
+            </constraints>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_5JWvnI_0EeyeNfLnxuaf1w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
@@ -1826,6 +1829,15 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_oj2GaXb8EeyFBsLCDI9XgA">
             <targetForm xmi:type="expression:Expression" xmi:id="_1MQ_cHb8EeyFBsLCDI9XgA" name="prikazNajboljePonudeForm" content="f50ae10a-cb53-4414-a9a6-4c1abfbdff5f" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
+          <filters xmi:type="process:ActorFilter" xmi:id="_QaEqwI_6EeyeNfLnxuaf1w" name="Odgovarajuci sef sluzbe nabavke" definitionId="bonita-actorfilter-user-manager" definitionVersion="1.0.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_QaEqwY_6EeyeNfLnxuaf1w" definitionId="bonita-actorfilter-user-manager" version="1.0.0">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_QaEqwo_6EeyeNfLnxuaf1w" key="userId">
+                <expression xmi:type="expression:Expression" xmi:id="_QaEqw4_6EeyeNfLnxuaf1w" name="userId()" content="return Long.valueOf(odabraniZaposleni)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Data" xmi:id="_QaEqxI_6EeyeNfLnxuaf1w" name="odabraniZaposleni" dataType="_nfexnnSuEeyrPuPSgE9Zog"/>
+                </expression>
+              </parameters>
+            </configuration>
+          </filters>
           <contract xmi:type="process:Contract" xmi:id="_oj2GaHb8EeyFBsLCDI9XgA">
             <inputs xmi:type="process:ContractInput" xmi:id="_0CkMcHb8EeyFBsLCDI9XgA" name="najboljaPonudaInput" type="COMPLEX" multiple="true" dataReference="najboljaPonuda" createMode="false">
               <inputs xmi:type="process:ContractInput" xmi:id="_0CkMcXb8EeyFBsLCDI9XgA" name="persistenceId_string" createMode="false"/>
@@ -1874,6 +1886,15 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_QAzSine5EeyUEdY53mrXaw">
             <targetForm xmi:type="expression:Expression" xmi:id="_8UQvEHe7EeyUEdY53mrXaw" name="ponudaUOkviruBudzetaForm" content="f7efba24-479d-438d-8456-815443a480b1" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
+          <filters xmi:type="process:ActorFilter" xmi:id="_U1lz0I_6EeyeNfLnxuaf1w" name="Odgovarajuci sef sluzbe nabavke" definitionId="bonita-actorfilter-user-manager" definitionVersion="1.0.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_U1lz0Y_6EeyeNfLnxuaf1w" definitionId="bonita-actorfilter-user-manager" version="1.0.0">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_U1lz0o_6EeyeNfLnxuaf1w" key="userId">
+                <expression xmi:type="expression:Expression" xmi:id="_U1lz04_6EeyeNfLnxuaf1w" name="userId()" content="return Long.valueOf(odabraniZaposleni)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Data" xmi:id="_U1lz1I_6EeyeNfLnxuaf1w" name="odabraniZaposleni" dataType="_nfexnnSuEeyrPuPSgE9Zog"/>
+                </expression>
+              </parameters>
+            </configuration>
+          </filters>
           <contract xmi:type="process:Contract" xmi:id="_QAzSiXe5EeyUEdY53mrXaw">
             <inputs xmi:type="process:ContractInput" xmi:id="_yp8l4He7EeyUEdY53mrXaw" name="odobravanjePonudeInput" type="BOOLEAN">
               <mapping xmi:type="process:ContractInputMapping" xmi:id="_yp8l4Xe7EeyUEdY53mrXaw"/>
@@ -1896,6 +1917,15 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_m6Q9mne5EeyUEdY53mrXaw">
             <targetForm xmi:type="expression:Expression" xmi:id="_YagoEHe8EeyUEdY53mrXaw" name="trazenjeSaglasnostiForm" content="09bb6d3e-4073-4dfe-b5c9-a86337d081e8" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
+          <filters xmi:type="process:ActorFilter" xmi:id="_e7fs0I_6EeyeNfLnxuaf1w" name="Odgovarajuci sef sluzbe nabavke" definitionId="bonita-actorfilter-user-manager" definitionVersion="1.0.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_e7gT4I_6EeyeNfLnxuaf1w" definitionId="bonita-actorfilter-user-manager" version="1.0.0">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_e7gT4Y_6EeyeNfLnxuaf1w" key="userId">
+                <expression xmi:type="expression:Expression" xmi:id="_e7gT4o_6EeyeNfLnxuaf1w" name="userId()" content="return Long.valueOf(odabraniZaposleni)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Data" xmi:id="_e7gT44_6EeyeNfLnxuaf1w" name="odabraniZaposleni" dataType="_nfexnnSuEeyrPuPSgE9Zog"/>
+                </expression>
+              </parameters>
+            </configuration>
+          </filters>
           <contract xmi:type="process:Contract" xmi:id="_m6Q9mXe5EeyUEdY53mrXaw"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_m6Q9nHe5EeyUEdY53mrXaw" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
@@ -1922,6 +1952,15 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_0z3Kqne5EeyUEdY53mrXaw">
             <targetForm xmi:type="expression:Expression" xmi:id="_JtoxsHfBEeyUEdY53mrXaw" name="ponudaSkupljaForm" content="328eff9f-3420-4dc6-9766-4b529d6a24af" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
+          <filters xmi:type="process:ActorFilter" xmi:id="_p_T_kI_6EeyeNfLnxuaf1w" name="Odgovrajuci sef sluzbe nabavke" definitionId="bonita-actorfilter-user-manager" definitionVersion="1.0.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_p_T_kY_6EeyeNfLnxuaf1w" definitionId="bonita-actorfilter-user-manager" version="1.0.0">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_p_T_ko_6EeyeNfLnxuaf1w" key="userId">
+                <expression xmi:type="expression:Expression" xmi:id="_p_T_k4_6EeyeNfLnxuaf1w" name="userId()" content="return Long.valueOf(odabraniZaposleni)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Data" xmi:id="_p_T_lI_6EeyeNfLnxuaf1w" name="odabraniZaposleni" dataType="_nfexnnSuEeyrPuPSgE9Zog"/>
+                </expression>
+              </parameters>
+            </configuration>
+          </filters>
           <contract xmi:type="process:Contract" xmi:id="_0z3KqXe5EeyUEdY53mrXaw">
             <inputs xmi:type="process:ContractInput" xmi:id="_F19VgHfBEeyUEdY53mrXaw" name="odobravanjePonude" type="BOOLEAN">
               <mapping xmi:type="process:ContractInputMapping" xmi:id="_F19VgXfBEeyUEdY53mrXaw"/>
@@ -1955,6 +1994,15 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_DSuOqne_EeyUEdY53mrXaw">
             <targetForm xmi:type="expression:Expression" xmi:id="_h3-R8HfFEeyUEdY53mrXaw" name="odobravanjeNakonNadredjenogForm" content="f1ef3d49-0919-427d-a6d7-4407b0312cfc" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
+          <filters xmi:type="process:ActorFilter" xmi:id="_kq2cUI_6EeyeNfLnxuaf1w" name="Odgovarajuci sef sluzbe nabavke" definitionId="bonita-actorfilter-user-manager" definitionVersion="1.0.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_kq2cUY_6EeyeNfLnxuaf1w" definitionId="bonita-actorfilter-user-manager" version="1.0.0">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_kq2cUo_6EeyeNfLnxuaf1w" key="userId">
+                <expression xmi:type="expression:Expression" xmi:id="_kq2cU4_6EeyeNfLnxuaf1w" name="userId()" content="return Long.valueOf(odabraniZaposleni)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Data" xmi:id="_kq2cVI_6EeyeNfLnxuaf1w" name="odabraniZaposleni" dataType="_nfexnnSuEeyrPuPSgE9Zog"/>
+                </expression>
+              </parameters>
+            </configuration>
+          </filters>
           <contract xmi:type="process:Contract" xmi:id="_DSuOqXe_EeyUEdY53mrXaw">
             <inputs xmi:type="process:ContractInput" xmi:id="_U0rCcHe_EeyUEdY53mrXaw" name="odobravanjePonudeInput" type="BOOLEAN">
               <mapping xmi:type="process:ContractInputMapping" xmi:id="_U0rCcXe_EeyUEdY53mrXaw"/>
@@ -2286,7 +2334,7 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_3izoio_0EeyeNfLnxuaf1w">
             <targetForm xmi:type="expression:Expression" xmi:id="_7tiHEI_1EeyeNfLnxuaf1w" name="postpisSefaNabavkeForm" content="aaef60a6-3b59-4056-9753-402f8b081719" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <filters xmi:type="process:ActorFilter" xmi:id="_Mk8lkI_1EeyeNfLnxuaf1w" name="Sef sluzbe nabavke" definitionId="bonita-actorfilter-user-manager" definitionVersion="1.0.0">
+          <filters xmi:type="process:ActorFilter" xmi:id="_Mk8lkI_1EeyeNfLnxuaf1w" name="Odgovarajuci sef sluzbe nabavke" definitionId="bonita-actorfilter-user-manager" definitionVersion="1.0.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_Mk8lkY_1EeyeNfLnxuaf1w" definitionId="bonita-actorfilter-user-manager" version="1.0.0">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Mk8lko_1EeyeNfLnxuaf1w" key="userId">
                 <expression xmi:type="expression:Expression" xmi:id="_Mk8lk4_1EeyeNfLnxuaf1w" name="userId()" content="return Long.valueOf(odabraniZaposleni)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long" returnTypeFixed="true">
@@ -2299,6 +2347,9 @@
             <inputs xmi:type="process:ContractInput" xmi:id="_6DfnII_1EeyeNfLnxuaf1w" name="fakturaInput" type="COMPLEX" dataReference="faktura" createMode="false">
               <inputs xmi:type="process:ContractInput" xmi:id="_6DfnIY_1EeyeNfLnxuaf1w" name="potpisSefaNabavke" type="BOOLEAN" createMode="false"/>
             </inputs>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="__d_SMI_7EeyeNfLnxuaf1w" expression="fakturaInput?.potpisSefaNabavke != false" errorMessage="Potpis je obavezan!" name="Potpis_obavezan" description="Potpis je obavezan!">
+              <inputNames>fakturaInput</inputNames>
+            </constraints>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_3izojI_0EeyeNfLnxuaf1w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
@@ -2485,7 +2536,7 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_XvlO0Y_xEeyeNfLnxuaf1w" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_nfexhHSuEeyrPuPSgE9Zog">
-        <targetForm xmi:type="expression:Expression" xmi:id="_XLvFcI_yEeyeNfLnxuaf1w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_Y3V8kI_7EeyeNfLnxuaf1w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_nfexhnSuEeyrPuPSgE9Zog">
         <targetForm xmi:type="expression:Expression" xmi:id="_nfexh3SuEeyrPuPSgE9Zog" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -3363,7 +3414,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_3Yx6RHfAEeyUEdY53mrXaw" x="-3" y="4"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_3Yx6QXfAEeyUEdY53mrXaw" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3Yx6QnfAEeyUEdY53mrXaw" points="[0, -4, 435, -770]$[129, -4, 564, -770]$[129, 696, 564, -70]$[-468, 696, -33, -70]$[-468, 743, -33, -23]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3Yx6QnfAEeyUEdY53mrXaw" points="[-15, 11, 420, -815]$[129, 11, 564, -815]$[129, 759, 564, -67]$[-468, 759, -33, -67]$[-468, 803, -33, -23]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3Y7rQHfAEeyUEdY53mrXaw" id="(1.0,0.5813953488372093)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3Y7rQXfAEeyUEdY53mrXaw" id="(0.8916666666666667,0.38333333333333336)"/>
     </edges>
