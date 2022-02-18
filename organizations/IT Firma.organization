@@ -222,9 +222,11 @@
       <lastName>Obuku</lastName>
       <title>Mrs</title>
       <manager>njegov.sef</manager>
-      <personalData/>
+      <personalData>
+        <email>milijana.djordjevic1998@gmail.com</email>
+      </personalData>
       <professionalData>
-        <email>hoce.odmor@gmail.com</email>
+        <email>milijana.djordjevic1998@gmail.com</email>
       </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
