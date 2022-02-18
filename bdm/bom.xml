@@ -9,6 +9,17 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.itfirma.model.Faktura">
+            <fields>
+                <field type="DOUBLE" length="255" name="ukupnaCena" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="naziviOprema" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="potpisSefaNabavke" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="potpisSefaZaposlenog" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.itfirma.model.Magacin">
             <fields>
                 <field type="INTEGER" length="255" name="kolicina" nullable="false" collection="false"/>
@@ -42,12 +53,52 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.itfirma.model.OpcijaPrevoza">
+            <fields>
+                <relationField type="AGGREGATION" reference="com.itfirma.model.TipPrevoza" fetchType="EAGER" name="tip" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
+                <field type="FLOAT" length="255" name="cena" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="odabrana" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.itfirma.model.OpcijaSmestaja">
+            <fields>
+                <relationField type="AGGREGATION" reference="com.itfirma.model.TipSmestaja" fetchType="EAGER" name="tip" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
+                <field type="FLOAT" length="255" name="cena" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="odabrana" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.itfirma.model.PonudaDobavljaca">
             <fields>
                 <field type="STRING" length="255" name="nazivOpreme" nullable="false" collection="false"/>
                 <field type="INTEGER" length="255" name="kolicina" nullable="false" collection="false"/>
                 <field type="BOOLEAN" length="255" name="najboljaPonuda" nullable="true" collection="false"/>
                 <field type="DOUBLE" length="255" name="cena" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.itfirma.model.PonudaOpcije">
+            <fields>
+                <field type="STRING" length="255" name="opis" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.itfirma.model.OpcijaSmestaja" fetchType="LAZY" name="opcijeSmestaja" nullable="true" collection="true"/>
+                <relationField type="COMPOSITION" reference="com.itfirma.model.OpcijaPrevoza" fetchType="LAZY" name="opcijePrevoza" nullable="true" collection="true"/>
+            </fields>
+        </businessObject>
+        <businessObject qualifiedName="com.itfirma.model.Porudzbenica">
+            <fields>
+                <field type="STRING" length="255" name="imeKupca" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="prezimeKupca" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="zahtevaneOpreme" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="ukupnaCena" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -87,6 +138,30 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.itfirma.model.TipPrevoza">
+            <fields>
+                <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.itfirma.model.TipSmestaja">
+            <fields>
+                <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.itfirma.model.TipZahteva">
+            <fields>
+                <field type="STRING" length="255" name="tipZahteva" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.itfirma.model.UtisakIntervjuera">
             <fields>
                 <field type="INTEGER" length="255" name="ocena" nullable="true" collection="false"/>
@@ -115,6 +190,25 @@
                 <relationField type="COMPOSITION" reference="com.itfirma.model.StavkaOpreme" fetchType="LAZY" name="stavkaOpreme" nullable="true" collection="true"/>
                 <field type="STRING" length="255" name="obrazlozenje" nullable="true" collection="false"/>
                 <field type="DOUBLE" length="255" name="maxBudzet" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.itfirma.model.ZahtevZaObuku">
+            <fields>
+                <field type="STRING" length="255" name="ime" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="prezime" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="naziv" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="mesto" nullable="true" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="vremeOdrzavanja" nullable="true" collection="false"/>
+                <field type="FLOAT" length="255" name="cena" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.itfirma.model.TipZahteva" fetchType="LAZY" name="tip" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="uzivo" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="preliminarnoOdobren" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="obrazlozenje" nullable="true" collection="false"/>
+                <field type="FLOAT" length="255" name="dozvoljeniBudzetSmestaj" nullable="true" collection="false"/>
+                <field type="FLOAT" length="255" name="dozvoljeniBudzetPrevoz" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>

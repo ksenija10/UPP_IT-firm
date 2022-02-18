@@ -217,6 +217,60 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="hoce.obuku">
+      <firstName>Hoce</firstName>
+      <lastName>Obuku</lastName>
+      <title>Mrs</title>
+      <manager>njegov.sef</manager>
+      <personalData/>
+      <professionalData>
+        <email>hoce.odmor@gmail.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="njegov.sef">
+      <firstName>Njegov</firstName>
+      <lastName>Sef</lastName>
+      <title>Ms</title>
+      <jobTitle>Sef onog koji hoce obuku</jobTitle>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="sef.finansija">
+      <firstName>Sef</firstName>
+      <lastName>Finansija</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="opsta.sluzba">
+      <firstName>Opsta</firstName>
+      <lastName>Sluzba</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="trazi.prevoz">
+      <firstName>Trazi</firstName>
+      <lastName>Prevoz</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="trazi.smestaj">
+      <firstName>Trazi</firstName>
+      <lastName>Smestaj</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
     <user userName="gost">
       <personalData/>
       <professionalData/>
@@ -275,6 +329,27 @@
     <group name="Gost" parentPath="/ItFirma">
       <displayName>Gost</displayName>
     </group>
+    <group name="Sluzba nabavke zaposleni" parentPath="/ItFirma/Sluzba nabavke">
+      <displayName>Sluzba nabavke zaposleni</displayName>
+    </group>
+    <group name="Sluzba nabavke nadredjeni" parentPath="/ItFirma/Sluzba nabavke">
+      <displayName>Sluzba nabavke nadredjeni</displayName>
+    </group>
+    <group name="Finansije" parentPath="/ItFirma">
+      <displayName>Finansije</displayName>
+    </group>
+    <group name="Opsta_sluzba" parentPath="/ItFirma">
+      <displayName>Opsta sluzba</displayName>
+    </group>
+    <group name="Zaposleni" parentPath="/ItFirma">
+      <displayName>Zaposleni</displayName>
+    </group>
+    <group name="Sluzba_prevoza" parentPath="/ItFirma">
+      <displayName>Sluzba prevoza</displayName>
+    </group>
+    <group name="Sluzba_smestaja" parentPath="/ItFirma">
+      <displayName>Sluzba smestaja</displayName>
+    </group>
   </groups>
   <memberships>
     <membership>
@@ -329,6 +404,71 @@
       <userName>gost</userName>
       <roleName>Clan</roleName>
       <groupName>Gost</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>maida</userName>
+      <roleName>Clan</roleName>
+      <groupName>Sluzba nabavke nadredjeni</groupName>
+      <groupParentPath>/ItFirma/Sluzba nabavke</groupParentPath>
+    </membership>
+    <membership>
+      <userName>milan</userName>
+      <roleName>Clan</roleName>
+      <groupName>Sluzba nabavke zaposleni</groupName>
+      <groupParentPath>/ItFirma/Sluzba nabavke</groupParentPath>
+    </membership>
+    <membership>
+      <userName>nata</userName>
+      <roleName>Clan</roleName>
+      <groupName>Sluzba nabavke zaposleni</groupName>
+      <groupParentPath>/ItFirma/Sluzba nabavke</groupParentPath>
+    </membership>
+    <membership>
+      <userName>marija</userName>
+      <roleName>Clan</roleName>
+      <groupName>Dobavljac</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>hoce.obuku</userName>
+      <roleName>Clan</roleName>
+      <groupName>Zaposleni</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>njegov.sef</userName>
+      <roleName>Sef</roleName>
+      <groupName>Zaposleni</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>sef.finansija</userName>
+      <roleName>Sef</roleName>
+      <groupName>Finansije</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>opsta.sluzba</userName>
+      <roleName>Clan</roleName>
+      <groupName>Opsta_sluzba</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>trazi.prevoz</userName>
+      <roleName>Clan</roleName>
+      <groupName>Sluzba_prevoza</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>trazi.smestaj</userName>
+      <roleName>Clan</roleName>
+      <groupName>Sluzba_smestaja</groupName>
+    </membership>
+    <membership>
+      <userName>jovana</userName>
+      <roleName>Clan</roleName>
+      <groupName>Dobavljac</groupName>
       <groupParentPath>/ItFirma</groupParentPath>
     </membership>
   </memberships>
