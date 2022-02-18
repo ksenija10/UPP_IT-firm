@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.2",
-  "id" : "prijavaNaOglasForm",
-  "name" : "prijavaNaOglasForm",
-  "lastUpdate" : 1637526543710,
+  "id" : "pregledPorudzbeniceForm",
+  "name" : "pregledPorudzbeniceForm",
+  "lastUpdate" : 1645103991546,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "1c0b64fe-6186-47f2-ae1f-f26fc6a12261",
+        "reference" : "9fe72803-cc3a-41b9-909f-4641b97bcfd4",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -39,7 +39,7 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "{{ task.displayName }}"
+                  "value" : "Slanje sledece porudzbence banci:"
                 },
                 "alignment" : {
                   "type" : "constant",
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "57bb1c9e-f635-43b9-b6ac-deef17fe3791",
+              "reference" : "e5d5764b-ba72-4304-a817-39e0547f4cf4",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "d89876af-2f15-4aec-9a16-d71c3ebef9ef",
+              "reference" : "ebcffeea-5ce1-4f96-9ed9-0e88182f3d95",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -113,17 +113,8 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          }
-        },
-        "reference" : "ec02d218-8012-4414-8c5e-7aa812bd3219",
+        "propertyValues" : { },
+        "reference" : "5c43fa71-d34d-4f46-b0cc-5d510cd816dc",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -132,10 +123,51 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "a2665440-744a-46f2-8929-5137e61b05f4",
+          "reference" : "4e84719e-1241-41f3-bdbe-1d0da57ba626",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 4"
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Porudzbenica"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "20826f2e-98d0-4280-bd8e-6353cb959b54",
+                "hasValidationError" : false,
+                "id" : "pbTitle",
+                "description" : ""
+              }
+            ],
             [
               {
                 "type" : "container",
@@ -147,8 +179,7 @@
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
-                    "type" : "variable",
-                    "value" : ""
+                    "type" : "variable"
                   },
                   "hidden" : {
                     "type" : "constant",
@@ -163,7 +194,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "67f8dc18-adeb-4b53-b63e-0987728baf44",
+                "reference" : "56cfe8c7-b502-4835-8f50-c3c32e5e4d97",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -203,7 +234,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Ime"
+                          "value" : "Ime Kupca"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -218,11 +249,11 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "prijavaNaOglas.ime"
+                          "value" : "porudzbenica.imeKupca"
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -243,7 +274,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "0897b943-598b-41fe-ba41-47933c772844",
+                      "reference" : "702e05af-a036-4568-89d3-1c7d96198d2a",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -285,7 +316,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Prezime"
+                          "value" : "Prezime Kupca"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -300,11 +331,11 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "prijavaNaOglas.prezime"
+                          "value" : "porudzbenica.prezimeKupca"
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -325,7 +356,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "1a26c25e-efa4-4bc2-a596-fd74f6f0e519",
+                      "reference" : "8db2ceb0-05cf-4f79-a143-dc5cbd896d9a",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -363,11 +394,11 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Email"
+                          "value" : "Narucene opreme"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -382,11 +413,11 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "prijavaNaOglas.email"
+                          "value" : "porudzbenica.zahtevaneOpreme"
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -407,7 +438,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "0aa3f7c0-2a88-422b-a3c2-81ef61e31fdc",
+                      "reference" : "6a945ec9-5cd0-4d5e-8a72-6132bb871d34",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -445,18 +476,18 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Adresa"
+                          "value" : "Ukupna Cena"
                         },
                         "placeholder" : {
                           "type" : "constant"
                         },
                         "type" : {
                           "type" : "constant",
-                          "value" : "text"
+                          "value" : "number"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -464,11 +495,11 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "prijavaNaOglas.adresa"
+                          "value" : "porudzbenica.ukupnaCena"
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "minLength" : {
                           "type" : "constant",
@@ -489,157 +520,9 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "a702068c-f7e2-4a9b-9ae3-5798828595fe",
+                      "reference" : "596d3010-77d8-44f3-8ef4-d8ce9841396b",
                       "hasValidationError" : false,
                       "id" : "pbInput",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "availableValues" : {
-                          "type" : "expression",
-                          "value" : "nivoObrazovanja_query"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Nivo Obrazovanja"
-                        },
-                        "placeholder" : {
-                          "type" : "constant",
-                          "value" : "Select a Nivo Obrazovanja"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "prijavaNaOglas_nivoObrazovanja"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "displayedKey" : {
-                          "type" : "constant",
-                          "value" : "nivoObrazovanja"
-                        },
-                        "returnedKey" : {
-                          "type" : "constant"
-                        }
-                      },
-                      "reference" : "1c4da723-6367-471d-8afc-252e8c5916b7",
-                      "hasValidationError" : false,
-                      "id" : "pbSelect",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "dateFormat" : {
-                          "type" : "constant",
-                          "value" : "MM/dd/yyyy"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Datum Podnosenja"
-                        },
-                        "type" : {
-                          "type" : "constant"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "todayLabel" : {
-                          "type" : "constant",
-                          "value" : "Today"
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "showToday" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "placeholder" : {
-                          "type" : "constant",
-                          "value" : "Enter a date (mm/dd/yyyy)"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "prijavaNaOglas.datumPodnosenja"
-                        }
-                      },
-                      "reference" : "5b9119c2-5c9c-4f0b-bbec-ebc939a8f022",
-                      "hasValidationError" : false,
-                      "id" : "pbDatePicker",
                       "description" : ""
                     }
                   ]
@@ -664,7 +547,7 @@
                     "value" : false
                   },
                   "cssClasses" : {
-                    "type" : "expression",
+                    "type" : "constant",
                     "value" : ""
                   },
                   "buttonStyle" : {
@@ -673,7 +556,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Pokreni servis placanja"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -740,7 +623,7 @@
                     "value" : ""
                   }
                 },
-                "reference" : "611274bf-e3b6-4305-8722-1bfe2c23df58",
+                "reference" : "21f240fe-7f71-4fa2-ad12-d1e31a0d90dc",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -792,7 +675,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "d8547742-caf6-4141-846b-e1936405a7e6",
+                "reference" : "41900d2f-48cc-459a-b19a-5d4ff92731dc",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -805,16 +688,16 @@
   ],
   "assets" : [
     {
-      "id" : "86219362-e8b9-4a7c-a4f0-a6c4dafdfc7b",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "418a6a75-17cf-4cda-9a55-fa14fcc7cf0a",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "46404692-7dcb-46dc-bc32-f97088bf7541",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "331a3b23-e57a-426e-a252-519f2e5772e4",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
@@ -846,20 +729,14 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.prijavaNaOglas && $data.prijavaNaOglas_nivoObrazovanja ){",
-        "\t//attach lazy references variables to parent variables",
-        "\t$data.prijavaNaOglas.nivoObrazovanja = $data.prijavaNaOglas_nivoObrazovanja;",
+        "if( $data.porudzbenica ){",
         "\treturn {",
-        "\t\t//map prijavaNaOglas variable to expected task contract input",
-        "\t\tprijavaNaOglasInput: {",
-        "\t\t\time: $data.prijavaNaOglas.ime !== undefined ? $data.prijavaNaOglas.ime : null,",
-        "\t\t\tprezime: $data.prijavaNaOglas.prezime !== undefined ? $data.prijavaNaOglas.prezime : null,",
-        "\t\t\temail: $data.prijavaNaOglas.email !== undefined ? $data.prijavaNaOglas.email : null,",
-        "\t\t\tadresa: $data.prijavaNaOglas.adresa !== undefined ? $data.prijavaNaOglas.adresa : null,",
-        "\t\t\tnivoObrazovanja: $data.prijavaNaOglas.nivoObrazovanja ? {",
-        "\t\t\t\tpersistenceId_string: $data.prijavaNaOglas.nivoObrazovanja.persistenceId_string !== undefined ? $data.prijavaNaOglas.nivoObrazovanja.persistenceId_string : null",
-        "\t\t\t} : null,",
-        "\t\t\tdatumPodnosenja: $data.prijavaNaOglas.datumPodnosenja !== undefined ? $data.prijavaNaOglas.datumPodnosenja : null",
+        "\t\t//map porudzbenica variable to expected task contract input",
+        "\t\tporudzbenicaInput: {",
+        "\t\t\timeKupca: $data.porudzbenica.imeKupca !== undefined ? $data.porudzbenica.imeKupca : null,",
+        "\t\t\tprezimeKupca: $data.porudzbenica.prezimeKupca !== undefined ? $data.porudzbenica.prezimeKupca : null,",
+        "\t\t\tzahtevaneOpreme: $data.porudzbenica.zahtevaneOpreme !== undefined ? $data.porudzbenica.zahtevaneOpreme : null,",
+        "\t\t\tukupnaCena: $data.porudzbenica.ukupnaCena !== undefined ? $data.porudzbenica.ukupnaCena : null",
         "\t\t}",
         "\t}",
         "}"
@@ -873,17 +750,10 @@
       ],
       "exposed" : false
     },
-    "prijavaNaOglas" : {
+    "porudzbenica" : {
       "type" : "url",
       "value" : [
-        "../{{context.prijavaNaOglas_ref.link}}"
-      ],
-      "exposed" : false
-    },
-    "prijavaNaOglas_nivoObrazovanja" : {
-      "type" : "url",
-      "value" : [
-        "{{prijavaNaOglas|lazyRef:'nivoObrazovanja'}}"
+        "../{{context.porudzbenica_ref.link}}"
       ],
       "exposed" : false
     },
@@ -893,17 +763,10 @@
         "id"
       ],
       "exposed" : false
-    },
-    "nivoObrazovanja_query" : {
-      "type" : "url",
-      "value" : [
-        "../API/bdm/businessData/com.itfirma.model.NivoObrazovanja?q=find&p=0&c=99"
-      ],
-      "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "d1e858a5-e2a2-4aef-aa3f-acfc6d7e0136",
+  "uuid" : "d1efbf3a-9c5e-4ab5-8bf6-57d2ae22223d",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

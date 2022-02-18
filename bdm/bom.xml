@@ -9,6 +9,17 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.itfirma.model.Faktura">
+            <fields>
+                <field type="DOUBLE" length="255" name="ukupnaCena" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="naziviOprema" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="potpisSefaNabavke" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="potpisSefaZaposlenog" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.itfirma.model.Magacin">
             <fields>
                 <field type="INTEGER" length="255" name="kolicina" nullable="false" collection="false"/>
@@ -20,7 +31,8 @@
         </businessObject>
         <businessObject qualifiedName="com.itfirma.model.NivoObrazovanja">
             <fields>
-                <field type="STRING" length="255" name="nivoObrazovanja" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="naziv" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="nivo" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -80,6 +92,14 @@
                 <relationField type="COMPOSITION" reference="com.itfirma.model.OpcijaSmestaja" fetchType="LAZY" name="opcijeSmestaja" nullable="true" collection="true"/>
                 <relationField type="COMPOSITION" reference="com.itfirma.model.OpcijaPrevoza" fetchType="LAZY" name="opcijePrevoza" nullable="true" collection="true"/>
             </fields>
+        </businessObject>
+        <businessObject qualifiedName="com.itfirma.model.Porudzbenica">
+            <fields>
+                <field type="STRING" length="255" name="imeKupca" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="prezimeKupca" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="zahtevaneOpreme" nullable="true" collection="false"/>
+                <field type="DOUBLE" length="255" name="ukupnaCena" nullable="true" collection="false"/>
+            </fields>
             <uniqueConstraints/>
             <queries/>
             <indexes/>
@@ -92,7 +112,9 @@
                 <field type="STRING" length="255" name="adresa" nullable="true" collection="false"/>
                 <relationField type="AGGREGATION" reference="com.itfirma.model.NivoObrazovanja" fetchType="LAZY" name="nivoObrazovanja" nullable="true" collection="false"/>
                 <field type="LOCALDATE" length="255" name="datumPodnosenja" nullable="true" collection="false"/>
-                <field type="BOOLEAN" length="255" name="preliminarnoOdobravanje" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="status" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.itfirma.model.OglasZaPosao" fetchType="LAZY" name="oglasZaPosao" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.itfirma.model.UtisakIntervjuera" fetchType="LAZY" name="utisci" nullable="true" collection="true"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -142,10 +164,12 @@
         </businessObject>
         <businessObject qualifiedName="com.itfirma.model.UtisakIntervjuera">
             <fields>
-                <field type="TEXT" length="255" name="licnaProcena" nullable="true" collection="false"/>
                 <field type="INTEGER" length="255" name="ocena" nullable="true" collection="false"/>
                 <field type="TEXT" length="255" name="licniUtisak" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="preporuka" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="intervjuerId" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="intervjuerUsername" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="interjvuerFullname" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
