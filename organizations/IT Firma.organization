@@ -464,6 +464,7 @@
       <userName>trazi.smestaj</userName>
       <roleName>Clan</roleName>
       <groupName>Sluzba_smestaja</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
     </membership>
     <membership>
       <userName>jovana</userName>
