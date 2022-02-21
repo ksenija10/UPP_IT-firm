@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.2",
-  "id" : "neuspesnoPlacanjeForm",
-  "name" : "neuspesnoPlacanjeForm",
-  "lastUpdate" : 1645458866500,
+  "id" : "neuspehPriPlacanjuForm",
+  "name" : "neuspehPriPlacanjuForm",
+  "lastUpdate" : 1645458926881,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "2578018b-9897-442b-acb2-baeadd56e4a7",
+        "reference" : "5c5006bb-6eff-4db3-acb5-80af9522712e",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "0f3457bc-c77f-4d45-b6fe-91b2d9098753",
+              "reference" : "f58ba663-c2a2-4361-b4cf-8be23d28aa7d",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "9aa890fb-6f5c-4dbb-9da3-8095f09b2a0b",
+              "reference" : "08916e20-3ee6-4615-9cf3-f423c6cbf50f",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "6ab6c5ff-9128-4f1a-b5ed-2306b3dbfe3e",
+        "reference" : "ed405311-5572-428d-a9bb-2f1a7ff2518e",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,10 +123,59 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "00cefd04-6a8a-4058-a407-1cb3713a44c6",
+          "reference" : "30c2299e-4c85-401e-9ff7-6ec73620ca62",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Pokusaj ponovo"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.ponovoPokusajPlacanjeInput"
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : false
+                  }
+                },
+                "reference" : "7a22a6c3-42b2-4e59-8c89-53aca38622b5",
+                "hasValidationError" : false,
+                "id" : "pbCheckbox",
+                "description" : ""
+              }
+            ],
             [
               {
                 "type" : "component",
@@ -154,7 +203,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Pokusaj ponovo"
+                    "value" : "Submit"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -221,7 +270,7 @@
                     "value" : ""
                   }
                 },
-                "reference" : "dde7f41a-890d-42a6-a444-3d0a50b9241e",
+                "reference" : "7bbf4d33-c302-4831-b3a1-4f219443da6f",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -273,7 +322,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "79f6dc14-420e-4c8d-9223-33402d5926d9",
+                "reference" : "76f1c9fb-8e01-496c-93b3-910063defbc8",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -286,14 +335,14 @@
   ],
   "assets" : [
     {
-      "id" : "38cea348-5416-4449-b4b4-2fd693d3bdc5",
+      "id" : "d99d6f86-4154-4c52-a59a-9f4387fe1966",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "8bd9ec84-a807-408c-97ea-b64b76be5d7e",
+      "id" : "f1e45c46-2ad1-4881-ad58-8fd0c85a08a4",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
@@ -306,6 +355,15 @@
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}"
+      ],
+      "exposed" : false
+    },
+    "formInput" : {
+      "type" : "json",
+      "value" : [
+        "{\r",
+        "  \"ponovoPokusajPlacanjeInput\" : false\r",
+        "}"
       ],
       "exposed" : false
     },
@@ -328,7 +386,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "",
+        "\tponovoPokusajPlacanjeInput: $data.formInput.ponovoPokusajPlacanjeInput",
         "}"
       ],
       "exposed" : false
@@ -349,7 +407,7 @@
     }
   },
   "hasValidationError" : false,
-  "uuid" : "2357e17d-7286-4d3f-a618-e14d90d70f7b",
+  "uuid" : "fb85a542-1202-4f35-a483-cfb6fbf86b7d",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
