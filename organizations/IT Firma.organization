@@ -38,7 +38,9 @@
       <jobTitle>HR menadzer</jobTitle>
       <manager>milijana.dj</manager>
       <personalData/>
-      <professionalData/>
+      <professionalData>
+        <email>perapera2359@gmail.com</email>
+      </professionalData>
       <password encrypted="false">bpm</password>
       <customUserInfoValues>
         <customUserInfoValue>
@@ -286,6 +288,23 @@
         </customUserInfoValue>
       </customUserInfoValues>
     </user>
+    <user userName="milica.f">
+      <firstName>Milica</firstName>
+      <lastName>Filipovic</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues>
+        <customUserInfoValue>
+          <name>nivoObrazovanja</name>
+          <value></value>
+        </customUserInfoValue>
+        <customUserInfoValue>
+          <name>strucniJezik</name>
+          <value></value>
+        </customUserInfoValue>
+      </customUserInfoValues>
+    </user>
   </users>
   <roles>
     <role name="Clan">
@@ -464,11 +483,18 @@
       <userName>trazi.smestaj</userName>
       <roleName>Clan</roleName>
       <groupName>Sluzba_smestaja</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
     </membership>
     <membership>
       <userName>jovana</userName>
       <roleName>Clan</roleName>
       <groupName>Dobavljac</groupName>
+      <groupParentPath>/ItFirma</groupParentPath>
+    </membership>
+    <membership>
+      <userName>milica.f</userName>
+      <roleName>Clan</roleName>
+      <groupName>Kandidat</groupName>
       <groupParentPath>/ItFirma</groupParentPath>
     </membership>
   </memberships>

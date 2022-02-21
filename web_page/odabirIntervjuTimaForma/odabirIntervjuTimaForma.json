@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "odabirIntervjuTimaForma",
   "name" : "odabirIntervjuTimaForma",
-  "lastUpdate" : 1644974592261,
+  "lastUpdate" : 1645401008843,
   "rows" : [
     [
       {
@@ -113,7 +113,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "56459113-7704-4cb6-beb1-c25f7afcd271",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -382,7 +391,7 @@
             ],
             [
               {
-                "type" : "container",
+                "type" : "component",
                 "dimension" : {
                   "xs" : 12,
                   "sm" : 12,
@@ -398,328 +407,38 @@
                     "type" : "constant",
                     "value" : false
                   },
-                  "repeatedCollection" : {
-                    "type" : "variable",
-                    "value" : ""
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "hello{{prijavaNaOglas}}"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
                   }
                 },
-                "reference" : "f765cdbf-0931-456f-8528-49a81b66613c",
+                "reference" : "0e9d12a8-9394-4373-ba57-fc9597e3751b",
                 "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
-                        "md" : 12,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "Predlog termina intervjua"
-                        },
-                        "level" : {
-                          "type" : "constant",
-                          "value" : "Level 4"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        }
-                      },
-                      "reference" : "6f6fa819-0241-4868-8b8f-5a635e8cc864",
-                      "hasValidationError" : false,
-                      "id" : "pbTitle"
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
-                        "md" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "inlineInput" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Termin intervjua 1"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "withTimeZone" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.intervjuTerminInput[0]"
-                        },
-                        "dateFormat" : {
-                          "type" : "constant",
-                          "value" : "MM/dd/yyyy"
-                        },
-                        "placeholder" : {
-                          "type" : "interpolation",
-                          "value" : "Enter a date (mm/dd/yyyy)"
-                        },
-                        "timeFormat" : {
-                          "type" : "constant",
-                          "value" : "h:mm:ss a"
-                        },
-                        "timePlaceholder" : {
-                          "type" : "interpolation",
-                          "value" : "Enter a time (h:mm:ss a)"
-                        },
-                        "showToday" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "todayLabel" : {
-                          "type" : "interpolation",
-                          "value" : "Today"
-                        },
-                        "showNow" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "nowLabel" : {
-                          "type" : "interpolation",
-                          "value" : "Now"
-                        }
-                      },
-                      "reference" : "b110d0b8-43a8-4e2c-8313-8c491741338d",
-                      "hasValidationError" : false,
-                      "id" : "pbDateTimePicker"
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
-                        "md" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "inlineInput" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Termin intervjua 2"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "withTimeZone" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.intervjuTerminInput[1]"
-                        },
-                        "dateFormat" : {
-                          "type" : "constant",
-                          "value" : "MM/dd/yyyy"
-                        },
-                        "placeholder" : {
-                          "type" : "interpolation",
-                          "value" : "Enter a date (mm/dd/yyyy)"
-                        },
-                        "timeFormat" : {
-                          "type" : "constant",
-                          "value" : "h:mm:ss a"
-                        },
-                        "timePlaceholder" : {
-                          "type" : "interpolation",
-                          "value" : "Enter a time (h:mm:ss a)"
-                        },
-                        "showToday" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "todayLabel" : {
-                          "type" : "interpolation",
-                          "value" : "Today"
-                        },
-                        "showNow" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "nowLabel" : {
-                          "type" : "interpolation",
-                          "value" : "Now"
-                        }
-                      },
-                      "reference" : "204d5309-06cf-4310-b518-d1797a0c9508",
-                      "hasValidationError" : false,
-                      "id" : "pbDateTimePicker"
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
-                        "md" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "inlineInput" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Termin intervjua 3"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "withTimeZone" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.intervjuTerminInput[2]"
-                        },
-                        "dateFormat" : {
-                          "type" : "constant",
-                          "value" : "MM/dd/yyyy"
-                        },
-                        "placeholder" : {
-                          "type" : "interpolation",
-                          "value" : "Enter a date (mm/dd/yyyy)"
-                        },
-                        "timeFormat" : {
-                          "type" : "constant",
-                          "value" : "h:mm:ss a"
-                        },
-                        "timePlaceholder" : {
-                          "type" : "interpolation",
-                          "value" : "Enter a time (h:mm:ss a)"
-                        },
-                        "showToday" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "todayLabel" : {
-                          "type" : "interpolation",
-                          "value" : "Today"
-                        },
-                        "showNow" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "nowLabel" : {
-                          "type" : "interpolation",
-                          "value" : "Now"
-                        }
-                      },
-                      "reference" : "88254c40-f4cf-4430-ad32-a9cd1dfa4a60",
-                      "hasValidationError" : false,
-                      "id" : "pbDateTimePicker"
-                    }
-                  ]
-                ]
+                "id" : "pbText"
               }
             ],
             [
@@ -1020,7 +739,7 @@
     "clanoviProj" : {
       "type" : "url",
       "value" : [
-        "../API/identity/user?p=0&c=100&f=role_id=106"
+        "../API/identity/user?p=0&c=100&f=role_id=6"
       ],
       "advancedOptions" : { },
       "exposed" : false
@@ -1028,13 +747,9 @@
     "clanoviJez" : {
       "type" : "url",
       "value" : [
-        "../API/identity/user?p=0&c=100&f=group_id=202"
+        "../API/identity/user?p=0&c=100&f=group_id=20"
       ],
-      "advancedOptions" : {
-        "headers" : "",
-        "statusCode" : "",
-        "failedResponseValue" : ""
-      },
+      "advancedOptions" : { },
       "exposed" : false
     },
     "processCaseData" : {
@@ -1048,7 +763,7 @@
     "clanoviHr" : {
       "type" : "url",
       "value" : [
-        "../API/identity/user?p=0&c=100&f=group_id=116"
+        "../API/identity/user?p=0&c=100&f=group_id=16"
       ],
       "advancedOptions" : { },
       "exposed" : false
@@ -1084,9 +799,13 @@
     "clanoviStrucniJezici" : {
       "type" : "url",
       "value" : [
-        "../API/customuserinfo/value?p=0&c=100&f=definitionId=201"
+        "../API/customuserinfo/value?p=0&c=100&f=definitionId=2"
       ],
-      "advancedOptions" : { },
+      "advancedOptions" : {
+        "headers" : "",
+        "statusCode" : "",
+        "failedResponseValue" : ""
+      },
       "exposed" : false
     },
     "clanoviOglasJezici" : {
@@ -1126,6 +845,22 @@
         "}",
         "return odabraniClanovi;"
       ],
+      "exposed" : false
+    },
+    "w_groups" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/group?p=0&c=100"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
+    },
+    "w_roles" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/role?p=0&c=100"
+      ],
+      "advancedOptions" : { },
       "exposed" : false
     }
   },

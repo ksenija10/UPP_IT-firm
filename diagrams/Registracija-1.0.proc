@@ -13,7 +13,7 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_0zRuYI67Eey1NIMo6FGVRA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_0zSVcY67Eey1NIMo6FGVRA" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:ServiceTask" xmi:id="_93WksI7AEey1NIMo6FGVRA" name="Step1" outgoing="_0zrXAI67Eey1NIMo6FGVRA" incoming="_wXacl466Eey1NIMo6FGVRA">
+        <elements xmi:type="process:ServiceTask" xmi:id="_93WksI7AEey1NIMo6FGVRA" name="Registruj se" outgoing="_0zrXAI67Eey1NIMo6FGVRA" incoming="_wXacl466Eey1NIMo6FGVRA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_wXach466Eey1NIMo6FGVRA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_wXaciI66Eey1NIMo6FGVRA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_wXaciY66Eey1NIMo6FGVRA" name="" content="" returnTypeFixed="true"/>
@@ -150,7 +150,7 @@
             </children>
             <children xmi:type="notation:Shape" xmi:id="_93fuoI7AEey1NIMo6FGVRA" type="3027" element="_93WksI7AEey1NIMo6FGVRA" fontName=".AppleSystemUIFont" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_93jZAI7AEey1NIMo6FGVRA" type="5017"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_93fuoY7AEey1NIMo6FGVRA" x="160" y="60" width="100" height="50"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_93fuoY7AEey1NIMo6FGVRA" x="134" y="54" width="144" height="72"/>
             </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_wXbDp466Eey1NIMo6FGVRA"/>

@@ -92,6 +92,9 @@
                 <relationField type="COMPOSITION" reference="com.itfirma.model.OpcijaSmestaja" fetchType="LAZY" name="opcijeSmestaja" nullable="true" collection="true"/>
                 <relationField type="COMPOSITION" reference="com.itfirma.model.OpcijaPrevoza" fetchType="LAZY" name="opcijePrevoza" nullable="true" collection="true"/>
             </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
         </businessObject>
         <businessObject qualifiedName="com.itfirma.model.Porudzbenica">
             <fields>
