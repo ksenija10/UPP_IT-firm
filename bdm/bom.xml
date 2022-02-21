@@ -20,6 +20,14 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.itfirma.model.GrupaZaposlenih">
+            <fields>
+                <field type="LONG" length="255" name="idGrupe" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.itfirma.model.Magacin">
             <fields>
                 <field type="INTEGER" length="255" name="kolicina" nullable="false" collection="false"/>

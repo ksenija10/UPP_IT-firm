@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.2",
-  "id" : "prosledjivanjeZahtevaZaposlenimaForm",
-  "name" : "prosledjivanjeZahtevaZaposlenimaForm",
-  "lastUpdate" : 1645465605658,
+  "id" : "prosledjivanjeZahtevaaForm",
+  "name" : "prosledjivanjeZahtevaaForm",
+  "lastUpdate" : 1645463527787,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "3cacddf6-b22e-4d01-a231-20dac75cf6ca",
+        "reference" : "7083c61a-c865-40be-873a-fa26eeecea33",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "f5a3c2f8-b4a0-4924-b3f1-4264eb740d41",
+              "reference" : "1c4aaedc-1d04-435a-b0a4-5422e54acac8",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "1fabe5e1-4a49-447a-828e-8df3bbe4e25b",
+              "reference" : "9a5f52ed-2c1e-4a35-8878-cd97e24af6b4",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -114,7 +114,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "d5f980ec-d47f-48a0-bfa6-c77b279c7d13",
+        "reference" : "42793d15-78b0-496f-b4ba-206bedabe35c",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -123,7 +123,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "9eca151c-0a18-41f8-839f-234b0e719d0a",
+          "reference" : "f2828248-fd7d-4e35-9166-f5b58904b140",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -162,7 +162,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "46eeb96d-f9b4-4d1d-a3ee-b6d75a2a70cc",
+                "reference" : "1b0d2437-292c-45bb-9243-f5f162a5c4f2",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -195,7 +195,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "42a2da20-194f-49d1-8796-6f2990a3c227",
+                "reference" : "4bba98a9-ec4f-4773-b836-53b210556927",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -275,7 +275,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "67f255cd-2db8-49e0-bd3c-6adb04856f8c",
+                      "reference" : "ef88fdd9-6afa-4427-ab42-e2af219570b9",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -357,7 +357,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "863bc5bf-7096-44df-b828-f336b85ce04e",
+                      "reference" : "9f0ec603-5324-4c15-a813-bcfe443a6261",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -398,7 +398,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "e41d017a-e970-44a1-9e7a-891e1280c458",
+                      "reference" : "0e31cc1a-2112-4acb-be5a-514b28d55a22",
                       "hasValidationError" : false,
                       "id" : "pbTitle",
                       "description" : ""
@@ -431,7 +431,7 @@
                           "value" : 12
                         }
                       },
-                      "reference" : "b9e83ba2-5e21-48ff-ad05-3ad634588b79",
+                      "reference" : "6f24cb72-4b17-4906-bfe3-363d78a4ce53",
                       "hasValidationError" : false,
                       "id" : "pbContainer",
                       "rows" : [
@@ -511,7 +511,7 @@
                                 "value" : 1
                               }
                             },
-                            "reference" : "1b196897-6eeb-442c-85c6-642ce42192bf",
+                            "reference" : "89c9a93a-0d5b-424d-a51f-5d929175da0d",
                             "hasValidationError" : false,
                             "id" : "pbInput",
                             "description" : ""
@@ -593,7 +593,7 @@
                                 "value" : 1
                               }
                             },
-                            "reference" : "151b1ed1-4f41-47f6-be3c-4a59807775f2",
+                            "reference" : "e99b96d0-85c1-43da-8d98-d7060bb67f29",
                             "hasValidationError" : false,
                             "id" : "pbInput",
                             "description" : ""
@@ -634,7 +634,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "7190b633-aa98-4666-9be5-67c76dd38c15",
+                            "reference" : "2528a660-1b78-4645-acbd-1b24bf499549",
                             "hasValidationError" : false,
                             "id" : "pbTitle",
                             "description" : ""
@@ -666,7 +666,7 @@
                                 "value" : 12
                               }
                             },
-                            "reference" : "a5a02058-1b43-449b-8441-a35cc1293b14",
+                            "reference" : "cfea4481-e673-41ac-bae8-7b41042646c5",
                             "hasValidationError" : false,
                             "id" : "pbContainer",
                             "rows" : [
@@ -736,7 +736,7 @@
                                       "type" : "constant"
                                     }
                                   },
-                                  "reference" : "4f6b7011-a9c6-417c-ac91-3b22dc2b4ca8",
+                                  "reference" : "e8ca1589-7cd2-43fb-9cbe-bd07bfa0801d",
                                   "hasValidationError" : false,
                                   "id" : "pbSelect",
                                   "description" : ""
@@ -783,9 +783,21 @@
                                     "dimension" : {
                                       "type" : "constant",
                                       "value" : 12
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 4
+                                    },
+                                    "allowHTML" : {
+                                      "type" : "constant",
+                                      "value" : true
                                     }
                                   },
-                                  "reference" : "45c02a2e-3e61-4d64-a752-16ead25988d2",
+                                  "reference" : "ff2cd9b4-eabc-4955-a1d1-6d54b4376091",
                                   "hasValidationError" : false,
                                   "id" : "pbText",
                                   "description" : ""
@@ -873,7 +885,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "dc77bfb8-78c2-4744-8289-3adbf8721e92",
+                      "reference" : "f18adbb5-79e6-4d35-b2cc-1b2ea61b192c",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -928,8 +940,10 @@
                     "type" : "interpolation"
                   },
                   "availableValues" : {
-                    "type" : "expression",
-                    "value" : "members"
+                    "type" : "constant",
+                    "value" : [
+                      "members"
+                    ]
                   },
                   "displayedKey" : {
                     "type" : "constant",
@@ -944,9 +958,147 @@
                     "value" : "formInput.odabraniZaposleniInput"
                   }
                 },
-                "reference" : "c8b05d36-e1dc-4a41-8fd1-74dd7be6ce31",
+                "reference" : "d5959b8a-3748-486c-8f87-838f1b8bcc8e",
                 "hasValidationError" : false,
                 "id" : "pbSelect"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 4"
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Zaposleni Sluzbe Nabavke"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "c5c35621-482d-452a-bc12-5c79d32b78a2",
+                "hasValidationError" : false,
+                "id" : "pbTitle",
+                "description" : ""
+              }
+            ],
+            [
+              {
+                "type" : "container",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "repeatedCollection" : {
+                    "type" : "variable"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "69640905-1c83-41a5-afe7-8302396a3fab",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Id Grupe"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation"
+                        },
+                        "availableValues" : {
+                          "type" : "constant"
+                        },
+                        "displayedKey" : {
+                          "type" : "constant"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "zaposleniSluzbeNabavke.idGrupe"
+                        }
+                      },
+                      "reference" : "22258cbe-cec6-4798-aa4e-165664f73291",
+                      "hasValidationError" : false,
+                      "id" : "pbSelect"
+                    }
+                  ]
+                ]
               }
             ],
             [
@@ -976,7 +1128,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Prosledi zahtev"
+                    "value" : "Submit"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -1018,32 +1170,9 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "assign" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "url" : {
-                    "type" : "interpolation"
-                  },
-                  "responseStatusCode" : {
-                    "type" : "variable",
-                    "value" : ""
-                  },
-                  "dataFromSuccess" : {
-                    "type" : "variable",
-                    "value" : ""
-                  },
-                  "closeOnSuccess" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "modalId" : {
-                    "type" : "constant",
-                    "value" : ""
                   }
                 },
-                "reference" : "407d208e-4992-43a5-8961-1742c90070b1",
+                "reference" : "6a9fb71f-928f-4b9f-9c36-04e8824c692d",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -1095,7 +1224,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "72690778-888b-496b-b893-f9984325db82",
+                "reference" : "37c4a378-70ae-4442-9ed8-9d5a7472238b",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -1108,16 +1237,16 @@
   ],
   "assets" : [
     {
-      "id" : "5b84fc0d-0e09-47d7-ac75-a20243e677be",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "fe8eb080-8385-4649-be82-5c1cb2954b21",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "b2371f58-803b-46ba-a302-6cbcfc9dce6c",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "37a52208-9d1a-4df8-8071-84388f0a27d1",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
@@ -1179,7 +1308,7 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.zahtev && $data.zahtev_stavkaOpreme ){",
+        "if( $data.zahtev && $data.zahtev_stavkaOpreme && $data.zaposleniSluzbeNabavke ){",
         "\t//attach lazy references variables to parent variables",
         "\t$data.zahtev.stavkaOpreme = $data.zahtev_stavkaOpreme;",
         "\treturn {",
@@ -1197,7 +1326,11 @@
         "\t\t\t})),",
         "\t\t\tmaxBudzet: $data.zahtev.maxBudzet !== undefined ? $data.zahtev.maxBudzet : null",
         "\t\t},",
-        "\t\todabraniZaposleniInput: $data.formInput.odabraniZaposleniInput",
+        "\t\todabraniZaposleniInput: $data.formInput.odabraniZaposleniInput,",
+        "\t\t//map zaposleniSluzbeNabavke variable to expected task contract input",
+        "\t\tzaposleniSluzbeNabavkeInput: {",
+        "\t\t\tidGrupe: $data.zaposleniSluzbeNabavke.idGrupe !== undefined ? $data.zaposleniSluzbeNabavke.idGrupe : null",
+        "\t\t}",
         "\t}",
         "}"
       ],
@@ -1207,6 +1340,13 @@
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}/context"
+      ],
+      "exposed" : false
+    },
+    "zaposleniSluzbeNabavke" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.zaposleniSluzbeNabavke_ref.link}}"
       ],
       "exposed" : false
     },
@@ -1220,14 +1360,14 @@
     "members" : {
       "type" : "url",
       "value" : [
-        "..//API/identity/user?p=0&c=100&f=group_id=22"
+        "..//API/identity/user?p=0&c=100&f=group_id={{zaposleniSluzbeNabavke.idGrupe}}"
       ],
       "advancedOptions" : { },
       "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "b33d9eb1-0b10-41e7-8d42-ecc0a996a679",
+  "uuid" : "64b2290c-38e0-4d87-957b-240a3b694968",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }
