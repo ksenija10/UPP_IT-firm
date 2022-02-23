@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "OpcijeSmestaja",
   "name" : "OpcijeSmestaja",
-  "lastUpdate" : 1645619573952,
+  "lastUpdate" : 1645647830332,
   "rows" : [
     [
       {
@@ -1202,15 +1202,15 @@
                                 "value" : true
                               },
                               "minLength" : {
-                                "type" : "constant",
-                                "value" : ""
+                                "type" : "constant"
                               },
                               "maxLength" : {
                                 "type" : "constant",
                                 "value" : ""
                               },
                               "min" : {
-                                "type" : "constant"
+                                "type" : "constant",
+                                "value" : 1
                               },
                               "max" : {
                                 "type" : "constant"

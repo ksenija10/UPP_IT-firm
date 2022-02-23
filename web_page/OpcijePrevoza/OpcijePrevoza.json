@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "OpcijePrevoza",
   "name" : "OpcijePrevoza",
-  "lastUpdate" : 1645619472030,
+  "lastUpdate" : 1645647878593,
   "rows" : [
     [
       {
@@ -989,10 +989,12 @@
                                 "value" : ""
                               },
                               "min" : {
-                                "type" : "constant"
+                                "type" : "constant",
+                                "value" : 1
                               },
                               "max" : {
-                                "type" : "constant"
+                                "type" : "constant",
+                                "value" : 1
                               },
                               "step" : {
                                 "type" : "constant",
