@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "RezervacijaIzvrsena",
   "name" : "RezervacijaIzvrsena",
-  "lastUpdate" : 1642693976403,
+  "lastUpdate" : 1645646708526,
   "rows" : [
     [
       {
@@ -1235,7 +1235,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "OK"
+                    "value" : "E SUPER"
                   },
                   "dataToSend" : {
                     "type" : "expression",

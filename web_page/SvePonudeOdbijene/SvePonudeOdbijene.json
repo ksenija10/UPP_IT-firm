@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "SvePonudeOdbijene",
   "name" : "SvePonudeOdbijene",
-  "lastUpdate" : 1642692565187,
+  "lastUpdate" : 1645646466708,
   "rows" : [
     [
       {
@@ -626,6 +626,7 @@
                 ]
               }
             ],
+            [ ],
             [
               {
                 "type" : "component",
@@ -653,7 +654,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Pa dobro sta sad"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -695,6 +696,29 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "fb9d631d-c1f6-49a8-bd44-b1bb2c889c2e",
