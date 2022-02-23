@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "OpcijePrevoza",
   "name" : "OpcijePrevoza",
-  "lastUpdate" : 1642694325351,
+  "lastUpdate" : 1645619472030,
   "rows" : [
     [
       {
@@ -1242,7 +1242,7 @@
                   },
                   "disabled" : {
                     "type" : "expression",
-                    "value" : "$form.$invalid"
+                    "value" : "$form.$invalid || ponuda_opcijePrevoza.length < 3 || ponuda_opcijePrevoza == null"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -1251,6 +1251,29 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "251cbbcb-5914-4eda-ad22-29f0b598b591",

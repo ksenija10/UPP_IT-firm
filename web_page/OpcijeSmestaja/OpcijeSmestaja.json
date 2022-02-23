@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "OpcijeSmestaja",
   "name" : "OpcijeSmestaja",
-  "lastUpdate" : 1642694360015,
+  "lastUpdate" : 1645619573952,
   "rows" : [
     [
       {
@@ -1463,7 +1463,7 @@
                   },
                   "disabled" : {
                     "type" : "expression",
-                    "value" : "$form.$invalid"
+                    "value" : "$form.$invalid || ponuda_opcijeSmestaja.length < 3 || ponuda_opcijeSmestaja == null"
                   },
                   "alignment" : {
                     "type" : "constant",
