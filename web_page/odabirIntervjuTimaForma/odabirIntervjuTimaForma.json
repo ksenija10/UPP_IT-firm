@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "odabirIntervjuTimaForma",
   "name" : "odabirIntervjuTimaForma",
-  "lastUpdate" : 1645645495403,
+  "lastUpdate" : 1645658668331,
   "rows" : [
     [
       {
@@ -640,6 +640,30 @@
       "exposed" : false
     },
     "w_roles" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/role?p=0&c=100"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
+    },
+    "ab_custom_info" : {
+      "type" : "url",
+      "value" : [
+        "../API/customuserinfo/value?c=10&p=0"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
+    },
+    "ab_grupe" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/group?p=0&c=100"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
+    },
+    "ab_role" : {
       "type" : "url",
       "value" : [
         "../API/identity/role?p=0&c=100"

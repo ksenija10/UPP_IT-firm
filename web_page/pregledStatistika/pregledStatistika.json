@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "pregledStatistika",
   "name" : "pregledStatistika",
-  "lastUpdate" : 1645647757316,
+  "lastUpdate" : 1645658243454,
   "rows" : [
     [
       {
@@ -487,8 +487,8 @@
                     "value" : ""
                   },
                   "hidden" : {
-                    "type" : "constant",
-                    "value" : false
+                    "type" : "expression",
+                    "value" : "statistikaVreme.value.length == 0"
                   },
                   "type" : {
                     "type" : "constant",
@@ -537,8 +537,8 @@
                     "value" : ""
                   },
                   "hidden" : {
-                    "type" : "constant",
-                    "value" : false
+                    "type" : "expression",
+                    "value" : "statistikaMesto.value.length == 0"
                   },
                   "type" : {
                     "type" : "constant",
@@ -1009,6 +1009,22 @@
         "}",
         "return vremeValues;"
       ],
+      "exposed" : false
+    },
+    "ab_grupe" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/group?p=0&c=100"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
+    },
+    "ab_role" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/role?p=0&c=100"
+      ],
+      "advancedOptions" : { },
       "exposed" : false
     }
   },

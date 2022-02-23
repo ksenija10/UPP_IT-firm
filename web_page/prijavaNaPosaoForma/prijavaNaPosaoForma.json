@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "prijavaNaPosaoForma",
   "name" : "prijavaNaPosaoForma",
-  "lastUpdate" : 1642550624993,
+  "lastUpdate" : 1645657535734,
   "rows" : [
     [
       {
@@ -1646,7 +1646,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Prijavi se"
                   },
                   "dataToSend" : {
                     "type" : "expression",

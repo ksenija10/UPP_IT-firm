@@ -1383,7 +1383,7 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_5UIzQUxIEey22sKD5zYR0w" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_5UIzQExIEey22sKD5zYR0w" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_5UIzQkxIEey22sKD5zYR0w" name="" content="" returnTypeFixed="true"/>
-          <connectors xmi:type="process:Connector" xmi:id="_GVgWYI65Eey1NIMo6FGVRA" name="posaljiIntervjuEmail" definitionId="email" event="ON_FINISH" throwErrorEvent="true" namedError="SendMailError" definitionVersion="1.2.0">
+          <connectors xmi:type="process:Connector" xmi:id="_GVgWYI65Eey1NIMo6FGVRA" name="posaljiIntervjuEmail" definitionId="email" event="ON_FINISH" ignoreErrors="true" namedError="SendMailError" definitionVersion="1.2.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_GVjZsI65Eey1NIMo6FGVRA" definitionId="email" version="1.2.0" modelVersion="7.12.0-004">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_GVkAwI65Eey1NIMo6FGVRA" key="smtpHost">
                 <expression xmi:type="expression:Expression" xmi:id="_GVkAwY65Eey1NIMo6FGVRA" name="smtp.gmail.com" content="smtp.gmail.com" returnTypeFixed="true"/>
