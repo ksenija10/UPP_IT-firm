@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "aktivniOglasiForm",
   "name" : "aktivniOglasiForm",
-  "lastUpdate" : 1642599889708,
+  "lastUpdate" : 1645645021027,
   "rows" : [
     [
       {
@@ -52,6 +52,42 @@
                     "type" : "constant",
                     "value" : false
                   },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Oglasi za posao"
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 2"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "8da09340-2be6-4759-a6da-ead738a45fb8",
+                "hasValidationError" : false,
+                "id" : "pbTitle"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
                   "allowHTML" : {
                     "type" : "constant",
                     "value" : true
@@ -65,8 +101,7 @@
                       "Lokacija",
                       "Opis",
                       "Pozicija",
-                      "Vestine",
-                      "Strani jezici"
+                      "Vestine"
                     ]
                   },
                   "type" : {
@@ -94,8 +129,7 @@
                       "lokacija",
                       "opis",
                       "pozicija",
-                      "potrebneVestineIZnanja",
-                      "straniJezici[1].straniJezik"
+                      "potrebneVestineIZnanja"
                     ]
                   },
                   "sortColumns" : {
@@ -157,7 +191,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Odaberi"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -228,58 +262,6 @@
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Default label"
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "{{selektovanRed}}"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  }
-                },
-                "reference" : "aa587334-ed1a-458b-b633-7b884bc46c13",
-                "hasValidationError" : false,
-                "id" : "pbText"
               }
             ],
             [
@@ -368,7 +350,7 @@
     "formInput" : {
       "type" : "json",
       "value" : [
-        "{ \"odabranOglasId\": 0 }"
+        "{ \"odabranOglasIdInput\": 0 }"
       ],
       "exposed" : false
     },
@@ -391,7 +373,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\"odabranOglasId\": $data.selektovanRed.persistenceId",
+        "\"odabranOglasIdInput\": $data.selektovanRed.persistenceId",
         "}"
       ],
       "exposed" : false
@@ -422,7 +404,11 @@
       "value" : [
         "../API/bdm/businessData/com.itfirma.model.OglasZaPosao?q=find&p=0&c=10"
       ],
-      "advancedOptions" : { },
+      "advancedOptions" : {
+        "headers" : "",
+        "statusCode" : "",
+        "failedResponseValue" : ""
+      },
       "exposed" : false
     }
   },

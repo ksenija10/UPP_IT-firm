@@ -1,8 +1,8 @@
 {
   "modelVersion" : "2.2",
-  "id" : "odabirTerminaForma",
-  "name" : "odabirTerminaForma",
-  "lastUpdate" : 1645645580361,
+  "id" : "neuspelaRegistracija",
+  "name" : "neuspelaRegistracija",
+  "lastUpdate" : 1645643944838,
   "rows" : [
     [
       {
@@ -11,7 +11,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "9d03401e-836b-4eff-a5f8-2223e8fa094e",
+        "reference" : "00d3a911-ec77-4253-b95d-108651e8308c",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -50,7 +50,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "a9e503cf-975c-4f18-963a-d6d97c65b86f",
+              "reference" : "04a2c39d-ba73-4691-9e38-fee339c32ddd",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -98,7 +98,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "84e3fa37-e78d-47ba-8de5-4e9c25a1dd54",
+              "reference" : "404b9e2c-69f9-46b4-aabf-b6c2b05db460",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -123,7 +123,7 @@
             "value" : false
           }
         },
-        "reference" : "fa9d0949-f97c-4512-b77f-db5d39e2fd5f",
+        "reference" : "46447950-04b5-44ef-b7bc-75148fe2889c",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -132,7 +132,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "ccd40efd-b562-438b-a2ee-244fae3a1226",
+          "reference" : "c56e0665-9ee8-46f9-91f5-489fbb5ccae1",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -143,7 +143,7 @@
                   "xs" : 12,
                   "sm" : 12,
                   "md" : 12,
-                  "lg" : 12
+                  "lg" : 6
                 },
                 "propertyValues" : {
                   "cssClasses" : {
@@ -154,54 +154,22 @@
                     "type" : "constant",
                     "value" : false
                   },
-                  "disabled" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "required" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
+                  "text" : {
                     "type" : "interpolation",
-                    "value" : "Odaberite termin intervjua"
+                    "value" : "Nazalost, doslo je do greske prilikom Vase registracije."
                   },
-                  "labelPosition" : {
+                  "level" : {
                     "type" : "constant",
-                    "value" : "top"
+                    "value" : "Level 3"
                   },
-                  "labelWidth" : {
+                  "alignment" : {
                     "type" : "constant",
-                    "value" : 4
-                  },
-                  "inline" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "availableValues" : {
-                    "type" : "expression",
-                    "value" : "termini"
-                  },
-                  "displayedKey" : {
-                    "type" : "constant",
-                    "value" : "label"
-                  },
-                  "returnedKey" : {
-                    "type" : "constant",
-                    "value" : "value"
-                  },
-                  "selectedValue" : {
-                    "type" : "variable",
-                    "value" : "formInput.odabranTerminInput"
+                    "value" : "left"
                   }
                 },
-                "reference" : "f00e169a-1a80-4933-ac90-dc79dba7c8bd",
+                "reference" : "2c7a5cbc-4be4-47d5-91de-20f8a3d493f8",
                 "hasValidationError" : false,
-                "id" : "pbRadioButtons"
+                "id" : "pbTitle"
               }
             ],
             [
@@ -231,7 +199,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Odaberi"
+                    "value" : "OK"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -298,7 +266,7 @@
                     "value" : ""
                   }
                 },
-                "reference" : "4dd45114-3dd4-4737-8223-8e5c4f48286d",
+                "reference" : "d7678d1a-15fa-40de-a515-c2ff292ab475",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -350,7 +318,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "001ece7c-9b6e-43d8-aad4-e9708ffdcf71",
+                "reference" : "c3632c17-eda1-4311-b54f-3744432d0dd3",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -363,16 +331,16 @@
   ],
   "assets" : [
     {
-      "id" : "73a44ed5-60a3-4903-bd6d-2b05cbd37531",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "494da468-fa6b-4f84-92d1-b5cd9f2bfd47",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "5d70eced-bdff-4107-a3a2-90d0550920d1",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "42ce05eb-6daf-4976-b7dc-90de32b782d9",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
@@ -383,15 +351,6 @@
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}"
-      ],
-      "exposed" : false
-    },
-    "formInput" : {
-      "type" : "json",
-      "value" : [
-        "{\r",
-        "  \"odabranTerminInput\" : null\r",
-        "}"
       ],
       "exposed" : false
     },
@@ -414,7 +373,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\todabranTerminInput: $data.formInput.odabranTerminInput",
+        "",
         "}"
       ],
       "exposed" : false
@@ -432,46 +391,10 @@
         "id"
       ],
       "exposed" : false
-    },
-    "termini" : {
-      "type" : "expression",
-      "value" : [
-        "let termini = [];",
-        "let intervjuTerminiRaw = $data.intervjuTermini.value;",
-        "let intervjuTerminiList = intervjuTerminiRaw",
-        "                            .substring(1, intervjuTerminiRaw.length-1)",
-        "                            .split(', ');",
-        "for (let i = 0; i < intervjuTerminiList.length; i++) {",
-        "    let termin = new Date(Date.parse(intervjuTerminiList[i]));",
-        "    termini.push({'label': termin.toLocaleString(), 'value': termin});",
-        "}",
-        "termini.push({'label': 'Nijedan (odustanak)', 'value': null});",
-        "return termini;",
-        "// for (let i = 0; i < intervjuTermini.length; i++) {",
-        "    // ",
-        "// }",
-        "// terminiString.push('Nijeadn');",
-        "// return terminiString;",
-        "// let termini = [];",
-        "// for (let i = 0; i < terminiString.length; i++) {",
-        "//     termini[i] = (new Date(Date.parse(terminiString[i]))).toLocaleString();",
-        "// }",
-        "// termini.push('Nijedan');",
-        "// return termini;"
-      ],
-      "exposed" : false
-    },
-    "intervjuTermini" : {
-      "type" : "url",
-      "value" : [
-        "../API/bpm/caseVariable/{{task.caseId}}/intervjuTermini"
-      ],
-      "advancedOptions" : { },
-      "exposed" : false
     }
   },
   "hasValidationError" : false,
-  "uuid" : "9f8a6f7c-79b9-477f-8cd2-84699ad1c138",
+  "uuid" : "1ada9024-4a99-437e-8389-dcdafc7a6e27",
   "type" : "form",
   "description" : "Page generated with Bonita UI designer"
 }

@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "ocenaIntervjueraForma",
   "name" : "ocenaIntervjueraForma",
-  "lastUpdate" : 1642642589899,
+  "lastUpdate" : 1645645620547,
   "rows" : [
     [
       {
@@ -151,7 +151,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Licna Procena Input"
+                    "value" : "Licna procena kandidata"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -462,7 +462,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Potvrdi"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -504,6 +504,29 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "d78439e3-37fa-4feb-839b-5db7c30f57a7",

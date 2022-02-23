@@ -1,0 +1,1019 @@
+{
+  "modelVersion" : "2.2",
+  "id" : "pregledStatistika",
+  "name" : "pregledStatistika",
+  "lastUpdate" : 1645647757316,
+  "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : { },
+        "reference" : "e6abbe8d-1962-4491-b996-c25a08b945b3",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "level" : {
+                  "type" : "constant",
+                  "value" : "Level 1"
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{ task.displayName }}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "center"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                }
+              },
+              "reference" : "b08f9c8d-2617-4094-8ca6-5b8eb1480a81",
+              "hasValidationError" : false,
+              "id" : "pbTitle",
+              "description" : ""
+            }
+          ],
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "allowHtml" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "label" : {
+                  "type" : "interpolation"
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{ task.displayDescription }}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                }
+              },
+              "reference" : "12583f2c-cb6f-4c27-9305-f5df7b7b6c57",
+              "hasValidationError" : false,
+              "id" : "pbText",
+              "description" : ""
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "type" : "formContainer",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "decfad3e-6292-4d20-86b2-b434ab7bf48f",
+        "hasValidationError" : false,
+        "id" : "pbFormContainer",
+        "container" : {
+          "type" : "container",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : { },
+          "reference" : "a8371999-38f1-4734-8525-d31e7e3a818a",
+          "hasValidationError" : false,
+          "id" : "pbContainer",
+          "rows" : [
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Pregled pristupa formi po vremenu"
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 2"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "96cf54f2-2d4f-423a-910e-7a507c6fe394",
+                "hasValidationError" : false,
+                "id" : "pbTitle"
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Pregled pristupa formi po gradovima"
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 2"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "5b5fd3b4-6f25-45d2-8f2a-cf0a83f5e052",
+                "hasValidationError" : false,
+                "id" : "pbTitle"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "expression",
+                    "value" : "statistikaVreme.value.length != 0"
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Trenutno nismo u mogucnosti da kontaktiramo eksterni servis, pokusajte kasnije."
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "afd02cd2-043a-410e-9f0e-eb2a07d4f62c",
+                "hasValidationError" : false,
+                "id" : "pbText"
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "expression",
+                    "value" : "statistikaMesto.value.length != 0"
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Trenutno nismo u mogucnosti da kontaktiramo eksterni servis, pokusajte kasnije."
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "6db526d6-44ce-4ece-8995-0e5e2e6fe715",
+                "hasValidationError" : false,
+                "id" : "pbText"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "expression",
+                    "value" : "statistikaVreme.value.length == 0"
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "headers" : {
+                    "type" : "constant",
+                    "value" : [
+                      "Vreme pristupa",
+                      "Broj pristupa"
+                    ]
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "Variable"
+                  },
+                  "apiUrl" : {
+                    "type" : "constant",
+                    "value" : "../API/"
+                  },
+                  "params" : {
+                    "type" : "constant"
+                  },
+                  "content" : {
+                    "type" : "expression",
+                    "value" : "statistikaVreme.value"
+                  },
+                  "columnsKey" : {
+                    "type" : "constant",
+                    "value" : [
+                      "name",
+                      "value"
+                    ]
+                  },
+                  "sortColumns" : {
+                    "type" : "constant"
+                  },
+                  "selectedRow" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "pageSize" : {
+                    "type" : "constant",
+                    "value" : 10
+                  },
+                  "filter" : {
+                    "type" : "constant"
+                  },
+                  "striped" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "condensed" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "bordered" : {
+                    "type" : "constant",
+                    "value" : false
+                  }
+                },
+                "reference" : "62979383-ba7a-4bbf-b4f8-585553776c91",
+                "hasValidationError" : false,
+                "id" : "pbDataTable"
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "expression",
+                    "value" : "statistikaMesto.value.length == 0"
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "headers" : {
+                    "type" : "constant",
+                    "value" : [
+                      "Mesto pristupa",
+                      "Broj pristupa"
+                    ]
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "Variable"
+                  },
+                  "apiUrl" : {
+                    "type" : "constant",
+                    "value" : "../API/"
+                  },
+                  "params" : {
+                    "type" : "constant"
+                  },
+                  "content" : {
+                    "type" : "expression",
+                    "value" : "statistikaMesto.value"
+                  },
+                  "columnsKey" : {
+                    "type" : "constant",
+                    "value" : [
+                      "name",
+                      "value"
+                    ]
+                  },
+                  "sortColumns" : {
+                    "type" : "constant"
+                  },
+                  "selectedRow" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "pageSize" : {
+                    "type" : "constant",
+                    "value" : 10
+                  },
+                  "filter" : {
+                    "type" : "constant"
+                  },
+                  "striped" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "condensed" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "bordered" : {
+                    "type" : "constant",
+                    "value" : false
+                  }
+                },
+                "reference" : "0b9ceeb1-8144-45f7-b021-f2c64944897f",
+                "hasValidationError" : false,
+                "id" : "pbDataTable"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 4
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "Pie"
+                  },
+                  "data" : {
+                    "type" : "expression",
+                    "value" : "mestoValues"
+                  },
+                  "labels" : {
+                    "type" : "expression",
+                    "value" : "mestoLabels"
+                  },
+                  "setLabels" : {
+                    "type" : "constant",
+                    "value" : [
+                      "Default set label"
+                    ]
+                  },
+                  "legendHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "colors" : {
+                    "type" : "constant"
+                  },
+                  "options" : {
+                    "type" : "constant"
+                  }
+                },
+                "reference" : "aed35319-6a69-4cba-884a-0027d3656d8e",
+                "hasValidationError" : false,
+                "id" : "pbChart"
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 4
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "Pie"
+                  },
+                  "data" : {
+                    "type" : "expression",
+                    "value" : "vremeValues"
+                  },
+                  "labels" : {
+                    "type" : "expression",
+                    "value" : "vremeLabels"
+                  },
+                  "setLabels" : {
+                    "type" : "constant",
+                    "value" : [
+                      "Default set label"
+                    ]
+                  },
+                  "legendHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "colors" : {
+                    "type" : "constant"
+                  },
+                  "options" : {
+                    "type" : "constant"
+                  }
+                },
+                "reference" : "95ebc922-bf05-4363-bc8f-6c03946ef59b",
+                "hasValidationError" : false,
+                "id" : "pbChart"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Prijave za posao"
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 2"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "71759fec-0b92-4738-a736-44237adaa6e7",
+                "hasValidationError" : false,
+                "id" : "pbTitle"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "headers" : {
+                    "type" : "constant",
+                    "value" : [
+                      "Ime",
+                      "Prezime",
+                      "Email",
+                      "Adresa",
+                      "Datum prijave"
+                    ]
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "Variable"
+                  },
+                  "apiUrl" : {
+                    "type" : "constant",
+                    "value" : "../API/"
+                  },
+                  "params" : {
+                    "type" : "constant"
+                  },
+                  "content" : {
+                    "type" : "expression",
+                    "value" : "prijave"
+                  },
+                  "columnsKey" : {
+                    "type" : "constant",
+                    "value" : [
+                      "ime",
+                      "prezime",
+                      "email",
+                      "adresa",
+                      "datumPodnosenja"
+                    ]
+                  },
+                  "sortColumns" : {
+                    "type" : "constant"
+                  },
+                  "selectedRow" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "pageSize" : {
+                    "type" : "constant",
+                    "value" : 5
+                  },
+                  "filter" : {
+                    "type" : "constant"
+                  },
+                  "striped" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "condensed" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "bordered" : {
+                    "type" : "constant",
+                    "value" : false
+                  }
+                },
+                "reference" : "1dc5c8e7-7613-40f6-8aeb-8375a4e6de37",
+                "hasValidationError" : false,
+                "id" : "pbDataTable"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "removeItem" : {
+                    "type" : "variable"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "primary"
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Dalje"
+                  },
+                  "dataToSend" : {
+                    "type" : "expression",
+                    "value" : "formOutput"
+                  },
+                  "dataFromError" : {
+                    "type" : "variable",
+                    "value" : "formOutput._submitError"
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "collectionPosition" : {
+                    "type" : "constant"
+                  },
+                  "targetUrlOnSuccess" : {
+                    "type" : "interpolation",
+                    "value" : "/bonita"
+                  },
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "Submit task"
+                  },
+                  "collectionToModify" : {
+                    "type" : "variable"
+                  },
+                  "valueToAdd" : {
+                    "type" : "expression"
+                  },
+                  "disabled" : {
+                    "type" : "expression",
+                    "value" : "$form.$invalid"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
+                  }
+                },
+                "reference" : "e41402af-ba05-48c1-a6be-7adc4a4ef533",
+                "hasValidationError" : false,
+                "id" : "pbButton",
+                "description" : ""
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "allowHtml" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "hidden" : {
+                    "type" : "expression",
+                    "value" : "!formOutput._submitError.message"
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : "alert alert-danger col-lg-6 col-lg-offset-3"
+                  },
+                  "label" : {
+                    "type" : "interpolation"
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "<strong>Debug message</strong>\n<br/>\n{{formOutput._submitError.message}}\n{{submit_errors_list}}"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  }
+                },
+                "reference" : "1c95643b-5c56-454e-a33d-233eb084196c",
+                "hasValidationError" : false,
+                "id" : "pbText",
+                "description" : ""
+              }
+            ]
+          ]
+        }
+      }
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "eb875a8a-6ad1-41e4-946b-c381157f982c",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "1034d909-ff00-4d3f-ac48-14dc0a13ffb8",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "task" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/userTask/{{taskId}}"
+      ],
+      "exposed" : false
+    },
+    "submit_errors_list" : {
+      "type" : "expression",
+      "value" : [
+        "if($data.formOutput && $data.formOutput._submitError && $data.formOutput._submitError.explanations){",
+        "\tconst liElements = $data.formOutput._submitError.explanations",
+        "\t\t.filter(cause => cause !== null)",
+        "\t\t.map(cause => \"<li>\" + cause + \"</li>\")",
+        "\t\t.join('');",
+        "\tif(liElements){",
+        "\t\treturn \"<ul>\" + liElements + \"</ul>\";",
+        "\t}",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "formOutput" : {
+      "type" : "expression",
+      "value" : [
+        "return {",
+        "",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "context" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/userTask/{{taskId}}/context"
+      ],
+      "exposed" : false
+    },
+    "taskId" : {
+      "type" : "urlparameter",
+      "value" : [
+        "id"
+      ],
+      "exposed" : false
+    },
+    "statistikaVreme" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/activityVariable/{{taskId}}/statistikaVreme"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
+    },
+    "statistikaMesto" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/activityVariable/{{taskId}}/statistikaMesto"
+      ],
+      "advancedOptions" : {
+        "headers" : "",
+        "statusCode" : "",
+        "failedResponseValue" : ""
+      },
+      "exposed" : false
+    },
+    "prijave" : {
+      "type" : "url",
+      "value" : [
+        "../API/bdm/businessData/com.itfirma.model.PrijavaNaOglas?q=find&p=0&c=20"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
+    },
+    "activity" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/activity/{{taskId}}"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
+    },
+    "mestoLabels" : {
+      "type" : "expression",
+      "value" : [
+        "let mestoLabels = [];",
+        "let values = $data.statistikaMesto.value;",
+        "for (let i = 0; i < values.length; i++) {",
+        "    mestoLabels.push(values[i].name);",
+        "}",
+        "return mestoLabels;"
+      ],
+      "exposed" : false
+    },
+    "mestoValues" : {
+      "type" : "expression",
+      "value" : [
+        "let mestoValues = [];",
+        "let values = $data.statistikaMesto.value;",
+        "for (let i = 0; i < values.length; i++) {",
+        "    mestoValues.push(values[i].value);",
+        "}",
+        "return mestoValues;"
+      ],
+      "exposed" : false
+    },
+    "vremeLabels" : {
+      "type" : "expression",
+      "value" : [
+        "let vremeLabels = [];",
+        "let values = $data.statistikaVreme.value;",
+        "for (let i = 0; i < values.length; i++) {",
+        "    vremeLabels.push(values[i].name);",
+        "}",
+        "return vremeLabels;"
+      ],
+      "exposed" : false
+    },
+    "vremeValues" : {
+      "type" : "expression",
+      "value" : [
+        "let vremeValues = [];",
+        "let values = $data.statistikaVreme.value;",
+        "for (let i = 0; i < values.length; i++) {",
+        "    vremeValues.push(values[i].value);",
+        "}",
+        "return vremeValues;"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "88a6ac22-b252-4fd4-904b-2cd9e2580d4e",
+  "type" : "form",
+  "description" : "Page generated with Bonita UI designer"
+}

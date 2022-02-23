@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "predlogIntervjuTermina",
   "name" : "predlogIntervjuTermina",
-  "lastUpdate" : 1645401003405,
+  "lastUpdate" : 1645645896584,
   "rows" : [
     [
       {
@@ -254,7 +254,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Potvrdi"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -296,6 +296,29 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "c9e6d084-730f-4815-982c-020cf4b9ce2e",

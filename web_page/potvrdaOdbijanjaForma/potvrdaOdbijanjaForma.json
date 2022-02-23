@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "potvrdaOdbijanjaForma",
   "name" : "potvrdaOdbijanjaForma",
-  "lastUpdate" : 1642522077733,
+  "lastUpdate" : 1645645409927,
   "rows" : [
     [
       {
@@ -1262,7 +1262,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Potvrdi"
                   },
                   "dataToSend" : {
                     "type" : "expression",

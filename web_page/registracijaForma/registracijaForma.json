@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "registracijaForma",
   "name" : "registracijaForma",
-  "lastUpdate" : 1644976202839,
+  "lastUpdate" : 1645644435496,
   "rows" : [
     [
       {
@@ -10,7 +10,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "20e71c1d-1ec2-4192-9b1e-0ddddaf38b73",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -76,7 +85,8 @@
                 },
                 "propertyValues" : {
                   "repeatedCollection" : {
-                    "type" : "variable"
+                    "type" : "variable",
+                    "value" : ""
                   },
                   "hidden" : {
                     "type" : "constant",
@@ -146,11 +156,29 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.kandidatData.ime"
+                          "value" : "formInput.kandidatDataInput.ime"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "4b2adb5c-5eac-44d8-8e3c-8a51106c3c08",
@@ -210,11 +238,29 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.kandidatData.prezime"
+                          "value" : "formInput.kandidatDataInput.prezime"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "5893bc68-ddd1-458e-8ae0-4f30a38c1c1d",
@@ -274,7 +320,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.kandidatData.email"
+                          "value" : "formInput.kandidatDataInput.email"
                         },
                         "required" : {
                           "type" : "constant",
@@ -356,7 +402,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.kandidatData.username"
+                          "value" : "formInput.kandidatDataInput.username"
                         },
                         "required" : {
                           "type" : "constant",
@@ -438,7 +484,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.kandidatData.password"
+                          "value" : "formInput.kandidatDataInput.password"
                         },
                         "required" : {
                           "type" : "constant",
@@ -518,7 +564,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.kandidatData.confirmPassword"
+                          "value" : "formInput.kandidatDataInput.confirmPassword"
                         },
                         "required" : {
                           "type" : "constant",
@@ -547,6 +593,233 @@
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 4,
+                        "lg" : 4
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Ulica i broj"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.kandidatDataInput.ulica"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "ca76168f-e58b-4f89-9252-d2e0462730b2",
+                      "hasValidationError" : false,
+                      "id" : "pbInput"
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 4,
+                        "lg" : 4
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Grad"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.kandidatDataInput.grad"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "cc07ee34-12f2-4cde-be80-784896bc852d",
+                      "hasValidationError" : false,
+                      "id" : "pbInput"
+                    },
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 4,
+                        "lg" : 4
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Drzava"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.kandidatDataInput.drzava"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "d9a5ff0e-0f84-427a-9604-fa00da7cf023",
+                      "hasValidationError" : false,
+                      "id" : "pbInput"
                     }
                   ],
                   [
@@ -608,7 +881,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.kandidatData.nivoObrazovanja"
+                          "value" : "formInput.kandidatDataInput.nivoObrazovanja"
                         }
                       },
                       "reference" : "6145e522-58ae-4242-a94f-2a6092777c1c",
@@ -646,7 +919,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Registruj se"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -688,64 +961,35 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable",
+                    "value" : ""
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "9702ee4f-15a1-4142-b539-558f8e9b93a0",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Default label"
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "{{formInput.kandidatData.nivoObrazovanja}}"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  }
-                },
-                "reference" : "13fef517-72d1-450b-af90-9a6bd309a0e1",
-                "hasValidationError" : false,
-                "id" : "pbText"
               }
             ],
             [
@@ -827,13 +1071,16 @@
       "type" : "json",
       "value" : [
         "{",
-        "  \"kandidatData\" : {",
+        "  \"kandidatDataInput\" : {",
         "    \"ime\" : \"\",",
         "    \"prezime\" : \"\",",
         "    \"username\" : \"\",",
         "    \"password\" : \"\",",
         "    \"confirmPassword\" : \"\",",
         "    \"email\" : \"\",",
+        "    \"ulica\": \"\",",
+        "    \"grad\": \"\",",
+        "    \"drzava\": \"\",",
         "    \"nivoObrazovanja\" : 0",
         "  }",
         "}"
@@ -859,7 +1106,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tkandidatData: $data.formInput.kandidatData",
+        "\tkandidatDataInput: $data.formInput.kandidatDataInput",
         "}"
       ],
       "exposed" : false
